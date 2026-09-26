@@ -159,7 +159,7 @@ input[type=range]{width:100%;accent-color:var(--glow)}.ends{display:flex;justify
 .L-editorial .hero{position:relative;min-height:560px;padding:0;display:block}.L-editorial .art{position:absolute;inset:0}.L-editorial .art::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,color-mix(in oklch,var(--bg) 92%,transparent) 0 38%,transparent 80%)}
 .L-editorial .hero .tx{position:relative;z-index:2;padding:calc(var(--g)*4) calc(var(--g)*1.8);max-width:560px}.L-editorial .h{font-size:clamp(2.4rem,5vw,4.4rem)}
 .L-impacto .hero{grid-template-columns:1fr;padding-bottom:0}.L-impacto .h{font-size:clamp(3rem,8vw,7rem);line-height:.9}.L-impacto .art{height:320px;border-radius:var(--rad);overflow:hidden;margin-top:calc(var(--g)*.5)}
-.L-impacto .marq{overflow:hidden;white-space:nowrap;background:var(--primary);color:var(--onp);font-family:var(--fh);text-transform:uppercase;padding:10px 0;margin-top:calc(var(--g)*1.4)}
+.L-impacto .marq{overflow:hidden;white-space:nowrap;background:var(--text);color:var(--bg);font-family:var(--fh);text-transform:uppercase;padding:10px 0;margin-top:calc(var(--g)*1.4)}
 .L-impacto .marq span{display:inline-block;padding-left:100%;animation:marq 18s linear infinite}@keyframes marq{to{transform:translateX(-100%)}}
 .L-organico .hero{grid-template-columns:1.1fr .9fr;align-items:center}.L-organico .art{aspect-ratio:3/4;border-radius:999px 999px var(--rad) var(--rad);overflow:hidden}
 .L-organico .s-blob{position:absolute;width:420px;height:420px;border-radius:50%;background:var(--accent);opacity:.18;filter:blur(40px);top:-120px;right:-80px}
@@ -204,7 +204,49 @@ body.still .device,body.still .device-hints{transition:none!important}
 @container (max-width:700px){.s .mobile-actions{transition:transform .35s cubic-bezier(.2,.7,.2,1),opacity .35s}.s:not(.cta-away) .mobile-actions{transform:translateY(110%);opacity:0;pointer-events:none}}
 
 /* Photos on dark palettes get a light finishing grade; light palettes stay natural (review 26/09). */
-.s.dark-base img{filter:brightness(.9) saturate(.9) contrast(1.03);transition:filter .6s}
+
+/* ---- Positioning tiers (26/09): the range changes finish, rhythm and selling argument ---- */
+.tier-note{margin:10px 2px 0;font-size:.8rem;line-height:1.45;color:var(--mut)}
+.s .prod{position:relative}.s .prod .parc{display:block;font-size:.76rem;color:var(--muted)}.s .prod .go{display:none}
+.s .t-h{font-family:var(--fh);font-weight:var(--hw);letter-spacing:var(--ht);font-size:clamp(1.25rem,2.3vw,1.9rem);line-height:1.15;margin:.35em 0 .45em}
+.s .t-h em{font-style:normal;color:var(--text);font-weight:800}
+/* acessível: clear offer, strong price, fast path to buy */
+.s .t-strip{display:flex;justify-content:center;gap:clamp(12px,3vw,34px);flex-wrap:wrap;padding:7px 14px;background:var(--text);color:var(--bg);font-size:.76rem;font-weight:600;letter-spacing:.02em}
+.s.T-acessivel .h{font-weight:800}
+.s .t-from{margin:.2em 0 0;color:var(--text);font-size:.95rem}.s .t-from b{font-size:1.25em;color:var(--text);font-weight:800}
+.s.T-acessivel .sec{padding-block:calc(var(--g)*1.8)}
+.s.T-acessivel .prod .pr{font-size:1.02rem;color:var(--text);font-weight:800}.s.T-acessivel .prod .pr s{color:var(--muted);font-weight:400;font-size:.8rem;margin-right:4px}
+.s.T-acessivel .prod .go{display:block;margin-top:10px;text-align:center;padding:8px;border-radius:var(--rad);background:var(--primary);color:var(--onp);font-size:.8rem;font-weight:700}
+.s .prod .tag{position:absolute;z-index:2;top:10px;left:10px;padding:4px 9px;border-radius:999px;background:var(--text);color:var(--bg);font-size:.68rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase}
+.s .t-deal{display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap;padding:calc(var(--g)*1.2) calc(var(--g)*1.4);border-width:2px;border-color:var(--line2)}
+/* intermediário: trust made explicit */
+.s .t-trio{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--g);border-block:1px solid var(--line);padding-block:calc(var(--g)*1.1)}
+.s .t-trio b{display:block;font-family:var(--fh);font-size:1rem}.s .t-trio span{color:var(--muted);font-size:.82rem}
+.s.T-intermediario .prod .go{display:block;margin-top:8px;font-size:.8rem;color:var(--primary-ink);font-weight:600}
+/* premium: air, hairlines, restraint, story and service */
+.s.T-premium .hero{padding-block:calc(var(--g)*3.4) calc(var(--g)*3.8)}
+.s.T-premium .h{font-weight:400;letter-spacing:-.015em;line-height:1.04}
+.s.T-premium .b1,.s.T-premium .b2,.s.T-premium .pill{text-transform:uppercase;letter-spacing:.14em;font-size:.72rem;font-weight:600;padding:15px 26px}
+.s.T-premium .sec{padding-block:calc(var(--g)*3.2)}
+.s.T-premium .card{border-color:var(--line);box-shadow:none}
+.s.T-premium .prods{grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:calc(var(--g)*1.4)}
+.s.T-premium .prod{background:transparent;border:0}.s.T-premium .prod .ph{aspect-ratio:4/5;border-radius:var(--rad)}
+.s.T-premium .prod .in{padding:14px 2px}.s.T-premium .prod b{font-family:var(--fh);font-weight:400;font-size:1.05rem;letter-spacing:.01em}
+.s.T-premium .prod .pr{display:block;font-weight:400;color:var(--muted);font-size:.84rem}
+.s.T-premium .prod .go{display:inline-block;margin-top:6px;font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:var(--text);border-bottom:1px solid var(--line2);padding-bottom:2px}
+.s.T-premium .prod .ph img{transition:transform 1.4s cubic-bezier(.2,.7,.2,1)}.s.T-premium .prod:hover .ph img{transform:scale(1.03)}
+.s.T-premium::after{content:"";position:absolute;inset:0;pointer-events:none;z-index:5;opacity:.035;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.s .t-detail{aspect-ratio:4/5}
+.s .t-steps{list-style:none;padding:0;margin:calc(var(--g)*1.2) 0 0;display:grid;gap:12px;counter-reset:t}
+.s .t-steps li{display:grid;grid-template-columns:34px 1fr;align-items:baseline;border-top:1px solid var(--line);padding-top:12px;counter-increment:t}
+.s .t-steps li::before{content:"0" counter(t);font-family:var(--fm);font-size:.72rem;color:var(--acc-ink);grid-row:span 2}
+.s .t-steps b{font-family:var(--fh);font-weight:500}.s .t-steps span{color:var(--muted);font-size:.84rem}
+.s .t-concierge{display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap;padding:calc(var(--g)*1.6) calc(var(--g)*1.8)}
+@container (max-width:700px){.s .t-trio{grid-template-columns:1fr}.s .t-strip{justify-content:flex-start;overflow-x:auto;flex-wrap:nowrap;white-space:nowrap}.s.T-premium .hero{padding-block:24px 34px}}
+/* v4 heroes are composed with the subject in the right two-thirds and calm space on the left: crops keep the subject. */
+.s .hero-gallery img.hk{object-position:68% 50%}
+/* Actions keep a lightness boundary >= 3:1 against the page even in grayscale: tonal rim of the brand hue (only visible when needed). */
+.s .b1,.s .pill,.s.T-acessivel .prod .go,.s .action-main{box-shadow:inset 0 0 0 2px var(--edge)}
 </style>
 </head>
 <body>
@@ -436,6 +478,24 @@ const paletteScores=()=>paletteRanking().slice(0,5);
 function vapMeter(v){return `<span class="vap" aria-label="Associação média estimada: positiva ${Math.round((v[0]+1)*50)}%, energia ${Math.round(v[1]*100)}%, presença ${Math.round(v[2]*100)}%">${[['Positiva',(v[0]+1)/2],['Energia',v[1]],['Presença',v[2]]].map(([name,value])=>`<span class="vap-row"><span>${name}</span><span class="vap-track"><i style="width:${Math.round(value*100)}%"></i></span></span>`).join('')}</span><span class="vap-note">associação média estimada, não garantia</span>`;}
 const paletteId=()=>!S.seg?'outro':S.step<=1?S.seg:(S.pal&&PALS[S.pal]?S.pal:paletteScores()[0].k);
 const FEEL=[['confianca','Confiança'],['proximidade','Proximidade'],['energia','Energia'],['sofisticacao','Sofisticação'],['exclusividade','Exclusividade'],['natureza','Leveza / natureza'],['criatividade','Criatividade'],['precisao','Organização / precisão']];
+// Positioning tiers (Kayky 26/09): the price range must change the site's strategy, not only a score.
+// Acessível sells by clarity and offer; intermediário by trust; premium by story, finish and exclusive service.
+const TIER={
+ acessivel:{note:'O site vende por clareza e oferta: preço à vista, parcelamento, mais vendidos e compra em poucos toques.',mult:.87,parc:6,card:'Adicionar',sec:'Mais vendidos'},
+ intermediario:{note:'O site vende por confiança: qualidade explicada, garantias e prova social, com preço visível.',mult:1,parc:3,card:'Ver detalhes',sec:null},
+ premium:{note:'O site vende por desejo: história, acabamento e detalhe, menos itens e maiores, atendimento exclusivo.',mult:2.1,parc:10,card:'Conhecer',sec:'Coleção'}};
+const tierKey=()=>S.price||'intermediario';
+function tierPrice(txt){const m=/R\$\s*(\d+)/.exec(txt||'');if(!m)return null;const n=Number(m[1]),k=tierKey(),T=TIER[k];
+ const v=k==='premium'?Math.max(9,Math.round(n*T.mult/10)*10-1):k==='acessivel'?Math.max(T.parc,Math.round(n*T.mult/T.parc)*T.parc):n;return {old:n,v,parc:T.parc};}
+const brl0=n=>'R$ '+n.toLocaleString('pt-BR');
+const parcela=(v,n)=>'R$ '+(v/n).toLocaleString('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:2});
+// Service businesses sell time and care, not stock: copy and buttons follow (Prosecutor 26/09).
+const SERVICE_SEGS=new Set(['beleza','saude','servicos','educacao','fitness','odontologia','eventos','turismo','imoveis','automotivo','construcao','ong']);
+function tierStrip(core,svc){if(core.includes('agenda'))return ['Horários ainda hoje','Confirmação na hora','Primeira visita com desconto'];
+ if(svc)return ['Primeira conversa sem compromisso','Pix ou cartão','Resposta no mesmo dia'];
+ if(core.includes('delivery')||core.includes('cardapio'))return ['Entrega rápida','Combos do dia','Pix na entrega'];
+ if(core.includes('pagamento')||core.includes('catalogo'))return ['Pix com 5% de desconto','Parcele em até 6x','Troca fácil'];
+ return ['Atendimento rápido','Preço justo','Resposta no mesmo dia'];}
 const PRICE=[['acessivel','Acessível','preço bom, volume'],['intermediario','Intermediário','qualidade com bom preço'],['premium','Premium','valor alto, experiência']];
 const AUD=[['jovens','Jovens'],['adultos','Adultos'],['familias','Famílias'],['empresas','Empresas'],['lojistas','Lojistas / revendedores']];
 const MODS={catalogo:'Vitrine de produtos',pagamento:'Pagamento online (Pix e cartão)',loja:'Loja física e mapa',whatsapp:'Botão de WhatsApp',atacado:'Pedido por grade (atacado)',b2b:'Cadastro de lojista / pedido B2B',
@@ -545,8 +605,8 @@ function tokens(k){const v=STY[k||S.sty||scores()[0].k],p=PALS[paletteId()],role
 
 // ================= client site renderer =================
 const IMG=id=>`img/${id}.webp`;
-// Night versions of each hero scene, rendered locally (Creative Plane) for dark palettes.
-const NIGHT_HEROES=new Set(['acai','alimentacao','automotivo','beleza','calcados','construcao','decoracao','educacao','eventos','fitness','imoveis','industria','moda','odontologia','ong','outro','padaria','pet','saude','servicos','sushi','turismo'].map(x=>'hero-'+x));
+// Art direction v4 (26/09): each hero exists in a high-key and a low-key daylight version; the key follows the palette's base luminance (surround).
+const DARK_HEROES=new Set(['hero-acai', 'hero-alimentacao', 'hero-automotivo', 'hero-calcados', 'hero-construcao', 'hero-decoracao', 'hero-educacao', 'hero-eventos', 'hero-fitness', 'hero-imoveis', 'hero-moda', 'hero-ong', 'hero-outro', 'hero-padaria', 'hero-pet', 'hero-saude', 'hero-servicos', 'hero-sushi', 'hero-turismo']);
 let openImage=null,openQuery='',openTimer=0;const openCache=new Map();
 async function searchOpenverse(){
  const query=(S.seg==='outro'?S.segOutro:S.objOutro).trim().slice(0,70);
@@ -571,23 +631,26 @@ let lastMods=[];
 function site(){const {v,t,roles}=tokens();const el=document.getElementById('site');const nome=S.nome.trim()||'Seu Negócio';const sg=seg();
  const set=(n,x)=>el.style.setProperty(n,x);
  for(const [n,x] of [['--bg',t.bg],['--surface',t.surface],['--text',t.text],['--muted',t.muted],['--primary',t.primary],['--primary-ink',t.primaryInk],['--onp',t.onp],['--accent',t.accent],['--acc-ink',t.accInk],['--line',t.line],['--line2',t.line2],['--focus',roles.focus]])set(n,css(x));
- set('--rad',Math.round(v.rad*S.round)+'px');set('--dens',(v.dens*S.dens).toFixed(2));set('--fh',v.fh);set('--fb',v.fb);set('--fm','"Space Grotesk",monospace');set('--hw',v.hw);set('--ht',v.ht);set('--hc',v.hc);
+ set('--edge',css(Math.min(CR(t.primary,t.bg),CR(t.primary,t.surface))<3?surroundColor(t.primary,[t.bg,t.surface],3):t.primary));set('--rad',Math.round(v.rad*S.round)+'px');set('--dens',(v.dens*S.dens).toFixed(2));set('--fh',v.fh);set('--fb',v.fb);set('--fm','"Space Grotesk",monospace');set('--hw',v.hw);set('--ht',v.ht);set('--hc',v.hc);
  document.getElementById('vp').style.setProperty('--s-bg',css(t.bg));document.documentElement.style.setProperty('--glow',css(fit([Math.min(.8,Math.max(.62,t.primary[0])),Math.max(.1,t.primary[1]),t.primary[2]])));
- el.className='s L-'+v.L+(Y(t.bg)<.2?' dark-base':'');el.dataset.motion=String(S.motion);const ls=linhas();const firstObj=sg.o.find(o=>S.obj.includes(o[0]));
+ const tk=tierKey(),TR=TIER[tk];el.className='s L-'+v.L+' T-'+tk;el.dataset.motion=String(S.motion);const ls=linhas();const firstObj=sg.o.find(o=>S.obj.includes(o[0]));
  const headline=(firstObj&&sg.copy[firstObj[0]])||sg.copy._;const words=headline.split(' ');const hl=words.length>3?esc(words.slice(0,-2).join(' '))+' <em>'+esc(words.slice(-2).join(' '))+'</em>':esc(headline);
- const darkBase=Y(t.bg)<.2,heroBase=S.seg?sg.hero:'hero-outro',localHero=IMG(darkBase&&NIGHT_HEROES.has(heroBase)?heroBase+'-noite':heroBase),heroImg=openImage?.url||localHero;const mods=modules();const fresh=mods.filter(m=>!lastMods.includes(m));
+ const heroId=S.seg?sg.hero:'hero-outro',localHero=IMG(Y(t.bg)<.2&&DARK_HEROES.has(heroId)?heroId+'-escuro':heroId),heroImg=openImage?.url||localHero;const mods=modules();const fresh=mods.filter(m=>!lastMods.includes(m));
  const galleryName=S.seg==='outro'||!S.seg?'outro':S.seg;
- const heroGallery=`<div class="art hero-gallery"><img src="${esc(heroImg)}" alt=""><img src="${IMG(galleryName+'-'+(ls[0]||'1'))}" alt=""><img src="${IMG(galleryName+'-'+(ls[1]||ls[0]||'2'))}" alt=""></div>`;
- const core=coreModules();const cta=core.includes('agenda')?'Agendar agora':core.includes('delivery')||core.includes('cardapio')?'Pedir agora':core.includes('pagamento')?'Comprar agora':core.includes('atacado')?'Ver grade de atacado':core.includes('orcamento')?'Pedir orçamento':'Conhecer';
- const heroTx=`<span class="eyebrow">${esc(segName())}${S.ans.cidade?' · '+esc(S.ans.cidade):''}</span><h3 class="h">${hl}</h3><p class="p">${esc(nome)} — ${esc(desc())}</p><div class="ctas"><span class="b1">${cta}</span><span class="b2">Saiba mais</span></div>`;
+ const heroGallery=`<div class="art hero-gallery"><img src="${esc(heroImg)}" alt=""${openImage?'':' class="hk"'} fetchpriority="high"><img src="${IMG(galleryName+'-'+(ls[0]||'1'))}" alt=""><img src="${IMG(galleryName+'-'+(ls[1]||ls[0]||'2'))}" alt=""></div>`;
+ const core=coreModules(),svc=SERVICE_SEGS.has(S.seg);const cta=tk==='premium'?(core.includes('agenda')?'Reservar horário':core.includes('delivery')||core.includes('cardapio')?'Reservar experiência':core.includes('pagamento')?'Conhecer a coleção':core.includes('atacado')?'Ver grade de atacado':core.includes('orcamento')?'Falar com especialista':'Conhecer'):core.includes('agenda')?'Agendar agora':core.includes('delivery')||core.includes('cardapio')?'Pedir agora':core.includes('pagamento')?'Comprar agora':core.includes('atacado')?'Ver grade de atacado':core.includes('orcamento')?'Pedir orçamento':'Conhecer';
+ const prices=ls.map(l=>tierPrice((sg.prod[l]||[])[1])).filter(Boolean),fromP=prices.length?Math.min(...prices.map(x=>x.v)):null;
+ const heroTx=`<span class="eyebrow">${esc(segName())}${tk==='premium'?' · atendimento exclusivo':S.ans.cidade?' · '+esc(S.ans.cidade):''}</span><h3 class="h">${hl}</h3><p class="p">${esc(nome)} — ${esc(desc())}</p>${tk==='acessivel'&&fromP?`<p class="t-from">a partir de <b>${brl0(fromP)}</b> · ou ${TR.parc}x sem juros</p>`:''}<div class="ctas"><span class="b1">${cta}</span><span class="b2">${tk==='premium'?'Nossa história':tk==='acessivel'?'Ver ofertas':'Saiba mais'}</span></div>`;
  let hero;
  if(v.L==='editorial')hero=`<section class="hero">${heroGallery}<div class="tx">${heroTx}</div></section>`;
  else if(v.L==='impacto')hero=`<section class="hero"><div>${heroTx}</div>${heroGallery}</section><div class="marq"><span>${esc((nome+' ✦ '+headline+' ✦ ').repeat(4))}</span></div>`;
  else hero=`<section class="hero">${v.L==='organico'?'<div class="s-blob"></div>':''}<div>${heroTx}</div>${heroGallery}</section>`;
  const block=(m,html)=>`<section class="sec ${fresh.includes(m)?'enter':''}" data-mod="${m}">${html}</section>`;
- const prodCard=l=>{const p=sg.prod[l]||['Produto','—'];return `<div class="card prod"><div class="ph"><img src="${IMG(S.seg==='outro'||!S.seg?'outro-'+(['1','2','3'].includes(l)?l:'1'):S.seg+'-'+l)}" alt=""></div><div class="in"><b>${esc(p[0])}</b><span class="pr">${esc(p[1])}</span></div></div>`;};
+ const prodCard=(l,i)=>{const p=sg.prod[l]||['Produto','—'],tp=tierPrice(p[1]);
+  const price=!tp?`<span class="pr">${esc(p[1])}</span>`:tk==='acessivel'?`<span class="pr"><s>${brl0(tp.old)}</s> ${brl0(tp.v)}</span><span class="parc">ou ${tp.parc}x de ${parcela(tp.v,tp.parc)}</span>`:tk==='premium'?`<span class="pr">${brl0(tp.v)}</span>`:`<span class="pr">${brl0(tp.v)}</span><span class="parc">ou ${tp.parc}x sem juros</span>`;
+  return `<div class="card prod">${tk==='acessivel'&&i===0?'<span class="tag">Mais vendido</span>':''}<div class="ph"><img src="${IMG(S.seg==='outro'||!S.seg?'outro-'+(['1','2','3'].includes(l)?l:'1'):S.seg+'-'+l)}" alt="" loading="lazy" decoding="async"></div><div class="in"><b>${esc(p[0])}</b>${price}<span class="go">${tk==='acessivel'&&svc?(core.includes('agenda')?'Agendar':'Quero este'):TR.card}</span></div></div>`;};
  const body=mods.map(m=>{switch(m){
-  case 'catalogo':return block(m,`<div class="st"><h4>${S.seg==='alimentacao'?'Mais pedidos':S.seg==='beleza'||S.seg==='saude'||S.seg==='servicos'||S.seg==='educacao'?'O que fazemos':'Destaques'}</h4><span>ver tudo →</span></div><div class="prods">${ls.slice(0,4).map(prodCard).join('')}</div>`);
+  case 'catalogo':return block(m,`<div class="st"><h4>${TR.sec&&!['beleza','saude','servicos','educacao'].includes(S.seg)?TR.sec:S.seg==='alimentacao'?'Mais pedidos':S.seg==='beleza'||S.seg==='saude'||S.seg==='servicos'||S.seg==='educacao'?'O que fazemos':'Destaques'}</h4><span>${tk==='premium'?'peças selecionadas':'ver tudo →'}</span></div><div class="prods">${ls.slice(0,tk==='premium'?3:4).map(prodCard).join('')}</div>`);
   case 'cardapio':return block(m,`<div class="st"><h4>${S.seg==='alimentacao'?'Cardápio':'Serviços e valores'}</h4><span>atualizado por você</span></div><div class="row2"><div>${ls.slice(0,4).map(l=>{const p=sg.prod[l]||['Item','—'];return `<div class="menuitem"><b>${esc(p[0])}</b><span>${esc(p[1])}</span></div>`}).join('')}</div><div class="card" style="aspect-ratio:4/3"><img src="${IMG(S.seg+'-'+ls[0])}" alt=""></div></div>`);
   case 'atacado':{const g=S.ans.grade;const sizes=[34,35,36,37,38,39,40,41,42,43,44];const q=[1,2,3,4,4,3,3,2,2,1,1];
    return block(m,`<div class="st"><h4>Pedido para lojistas</h4><span>${g==='aberta'?'grade aberta: escolha os números':g==='minimo'?'pedido mínimo de 12 pares':'grade fechada pronta'}</span></div><div class="card" style="padding:14px;overflow:auto"><table class="grade"><tr><th>Nº</th>${sizes.map(s=>`<th>${s}</th>`).join('')}<th>Total</th></tr><tr><td><b>${esc((sg.prod[ls[0]]||['Modelo'])[0])}</b></td>${q.map(x=>`<td><span class="qty">${g==='aberta'?'—':x}</span></td>`).join('')}<td><b>${g==='aberta'?'0':'26'} pares</b></td></tr></table></div>`);}
@@ -595,7 +658,7 @@ function site(){const {v,t,roles}=tokens();const el=document.getElementById('sit
   case 'loja':return block(m,`<div class="row2"><div><div class="st"><h4>Venha nos visitar</h4></div><p class="p">${esc(S.ans.cidade||'Sua cidade')} · aberto de segunda a sábado</p><div class="ctas"><span class="b2">Como chegar</span></div></div><div class="map"></div></div>`);
   case 'agenda':return block(m,`<div class="row2"><div><div class="st"><h4>Agende em segundos</h4></div><p class="p">${S.ans.profs&&S.ans.profs!=='1'?'Escolha o profissional e o horário.':'Escolha o melhor horário.'} Confirmação automática.</p></div><div class="card" style="padding:16px"><div class="slots">${['09:00','10:30','13:00','14:30','16:00','17:30'].map((h,i)=>`<span class="slot ${i===2?'on':''}">${h}</span>`).join('')}</div></div></div>`);
   case 'delivery':return block(m,`<div class="card" style="padding:18px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap"><div><b>Entrega em até 40 min</b><div class="p">Taxa calculada pelo bairro · pedido chega organizado</div></div><span class="b1">Fazer pedido</span></div>`);
-  case 'pagamento':return block(m,`<div class="badges"><span class="badge">Pix</span><span class="badge">Cartão em até 6x</span><span class="badge">Compra segura</span><span class="badge">Troca fácil</span></div>`);
+  case 'pagamento':return block(m,`<div class="badges">${(tk==='premium'?[`Até ${TR.parc}x sem juros`,'Entrega com cuidado','Embalagem de presente','Troca garantida']:tk==='acessivel'?['Pix com 5% off',`Cartão em até ${TR.parc}x`,'Compra segura','Troca fácil']:['Pix',`Cartão em até ${TR.parc}x sem juros`,'Compra segura','Troca fácil']).map(x=>`<span class="badge">${x}</span>`).join('')}</div>`);
   case 'numeros':return block(m,`<div class="stats"><div class="stat"><b>${S.seg==='industria'?'40 mil':'12 anos'}</b><span>${S.seg==='industria'?'pares por mês':'de experiência'}</span></div><div class="stat"><b>4,9★</b><span>avaliação média</span></div><div class="stat"><b>98%</b><span>clientes satisfeitos</span></div></div><p class="note">números de exemplo — entram os seus</p>`);
   case 'depoimentos':return block(m,`<div class="row2"><div class="card" style="padding:20px"><p class="quote">“Atendimento impecável. Já indiquei para toda a família.”</p><div class="who">Cliente de exemplo</div></div><div class="card" style="padding:20px"><p class="quote">“Rápido, fácil e exatamente o que eu queria.”</p><div class="who">Cliente de exemplo</div></div></div>`);
   case 'orcamento':return block(m,`<div class="row2"><div><div class="st"><h4>${S.seg==='educacao'?'Garanta sua vaga':'Peça seu orçamento'}</h4></div><p class="p">Responda 3 perguntas e receba retorno no mesmo dia.</p></div><div class="form"><div class="fi">Seu nome</div><div class="fi">O que você precisa?</div><span class="b1" style="text-align:center">Enviar</span></div></div>`);
@@ -603,7 +666,13 @@ function site(){const {v,t,roles}=tokens();const el=document.getElementById('sit
   case 'area':return block(m,`<div class="card" style="padding:20px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap"><div><b>Área do ${S.seg==='educacao'?'aluno':'cliente'}</b><div class="p">Acompanhe tudo com login seguro.</div></div><span class="b2">Entrar</span></div>`);
   case 'cursos':return block(m,`<div class="st"><h4>Cursos</h4></div><div class="prods">${ls.slice(0,3).map(prodCard).join('')}</div>`);
   case 'whatsapp':return '';default:return '';}}).join('');
- el.innerHTML=`<header class="hd"><span class="logo">${esc(nome)}</span><nav class="menu"><span>Início</span><span>${mods.includes('catalogo')?'Produtos':'Sobre'}</span><span>Contato</span></nav><span class="pill">${cta}</span><button class="mobile-menu touch-action" type="button" aria-label="Abrir menu" aria-expanded="false">☰</button></header><nav class="mobile-nav" aria-label="Menu de celular"><span>Início</span><span>${mods.includes('catalogo')?'Produtos':'Sobre'}</span><span>Contato</span></nav>${hero}${body}
+ const g2=S.seg==='outro'||!S.seg?'outro':S.seg,detail=IMG(g2+'-'+(ls[1]||ls[0]||'2'));
+ const tierTop=tk==='premium'?`<section class="sec t-story"><div class="row2"><div class="card t-detail"><img src="${detail}" alt="" loading="lazy" decoding="async"></div><div><span class="eyebrow">Nossa história</span><h4 class="t-h">Feito com intenção, do primeiro detalhe ao último.</h4><p class="p">${svc?`A ${esc(nome)} cuida de cada etapa: escuta, método e acompanhamento. Não é sobre fazer mais — é sobre fazer certo, e cuidar de quem confia.`:`A ${esc(nome)} escolhe cada material, cada parceiro e cada acabamento. Não é sobre ter mais — é sobre ter o certo, e cuidar de quem escolhe.`}</p><ol class="t-steps">${(svc?[['Escuta','entender antes de propor'],['Método','cada etapa com critério'],['Acompanhamento','antes, durante e depois']]:[['Curadoria','seleção do que merece estar aqui'],['Acabamento','detalhe que se percebe no toque'],['Acompanhamento','antes, durante e depois']]).map(([b,x])=>`<li><b>${b}</b><span>${x}</span></li>`).join('')}</ol></div></div></section>`
+  :tk==='intermediario'?`<section class="sec t-trust"><div class="t-trio"><div><b>Qualidade explicada</b><span>você sabe o que está levando</span></div><div><b>Atendimento de verdade</b><span>gente respondendo, não robô</span></div><div><b>Garantia</b><span>se não ficar certo, a gente resolve</span></div></div></section>`
+  :`<section class="sec t-offer"><div class="card t-deal"><div><span class="eyebrow">Oferta da semana</span><h4 class="t-h">${esc((sg.prod[ls[0]]||['Destaque'])[0])}${prices[0]?` por <em>${brl0(prices[0].v)}</em>`:''}</h4><p class="p">${prices[0]?`À vista no Pix ou ${prices[0].parc}x de ${parcela(prices[0].v,prices[0].parc)}. `:''}${core.includes('delivery')||(core.includes('cardapio')&&!svc)?'Só nesta semana.':svc||core.includes('agenda')?'Vagas limitadas.':'Estoque limitado.'}</p></div><span class="b1">${cta}</span></div></section>`;
+ const tierEnd=tk==='premium'?`<section class="sec"><div class="card t-concierge"><div><span class="eyebrow">Atendimento exclusivo</span><h4 class="t-h">Um especialista acompanha você do primeiro contato ao pós-venda.</h4></div><span class="b2">Falar com um especialista</span></div></section>`:'';
+ const strip=tk==='acessivel'?`<div class="t-strip">${tierStrip(core,svc).map(x=>`<span>${x}</span>`).join('')}</div>`:'';
+ el.innerHTML=`${strip}<header class="hd"><span class="logo">${esc(nome)}</span><nav class="menu"><span>Início</span><span>${mods.includes('catalogo')?'Produtos':'Sobre'}</span><span>Contato</span></nav><span class="pill">${cta}</span><button class="mobile-menu touch-action" type="button" aria-label="Abrir menu" aria-expanded="false">☰</button></header><nav class="mobile-nav" aria-label="Menu de celular"><span>Início</span><span>${mods.includes('catalogo')?'Produtos':'Sobre'}</span><span>Contato</span></nav>${hero}${tierTop}${body}${tierEnd}
  ${mods.includes('whatsapp')?'<span class="wa" title="WhatsApp"></span>':''}<footer class="ft"><span>© ${esc(nome)}</span><span class="note">prévia ilustrativa — imagens e textos de exemplo${openImage?` · imagem Openverse: ${esc(openImage.author)} · ${esc(openImage.license)}`:''}</span></footer><div class="mobile-actions"><button type="button" class="action-main touch-action" aria-pressed="false">${cta}</button>${mods.includes('whatsapp')?'<button type="button" class="action-whats touch-action" aria-label="WhatsApp" aria-pressed="false"><svg width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.2 11.4a8.3 8.3 0 0 1-12.3 7.3L4 20l1.3-3.7a8.3 8.3 0 1 1 14.9-4.9Z"/><path d="M9 8.3c-.4-.5-.8-.3-1 .1-.4.7.2 2 1.6 3.5 1.5 1.5 2.9 2.2 3.6 1.8.5-.3.7-.7.2-1.1l-1.1-.5c-.3-.1-.5.4-.9.5-.4.1-1.5-.7-2-1.2-.5-.5-1.2-1.5-1.1-1.9.1-.4.5-.6.5-.9L9 8.3Z"/></svg></button>':''}</div>`;
  el.querySelector('.mobile-menu').onclick=e=>{const open=e.currentTarget.getAttribute('aria-expanded')!=='true';e.currentTarget.setAttribute('aria-expanded',String(open));e.currentTarget.setAttribute('aria-label',open?'Fechar menu':'Abrir menu');el.querySelector('.mobile-nav').classList.toggle('on',open);};
  el.querySelectorAll('.mobile-actions button').forEach(b=>b.onclick=()=>{b.setAttribute('aria-pressed',String(b.getAttribute('aria-pressed')!=='true'));});
@@ -639,7 +708,7 @@ const STEPS=[
   ${qs.map(q=>`<div class="q"><h2>${esc(q.t)}</h2>${q.h?`<p class="lead" style="margin:-4px 0 10px;font-size:.85rem">${esc(q.h)}</p>`:''}${q.text?`<input type="text" data-text="${q.id}" placeholder="${esc(q.text)}" value="${esc(S.ans[q.id]||'')}">`:
   `<div class="${q.img?'grid2':''}">${q.op.map(([v,l])=>opt(q.id,v,l,{multi:!!q.m,img:q.img?IMG(S.seg==='outro'||!S.seg?'outro-'+v:S.seg+'-'+v):''})).join('')}</div>`}</div>`).join('')}`;},
  ()=>`<div class="q"><p class="kicker">04 · Posicionamento</p><h1>Como você quer ser <em>percebido</em>?</h1></div>
-  <div class="q"><h2>Faixa de preço dos seus produtos ou serviços</h2><div class="seg3">${PRICE.map(([v,l,s])=>opt('price',v,l,{sub:s})).join('')}</div></div>
+  <div class="q"><h2>Faixa de preço dos seus produtos ou serviços</h2><div class="seg3">${PRICE.map(([v,l,s])=>opt('price',v,l,{sub:s})).join('')}</div><p class="tier-note" id="tierNote">${S.price?TIER[S.price].note:'A faixa muda a estratégia do site, não só as cores.'}</p></div>
   <div class="q"><h2>Quem é o seu cliente principal?</h2><div class="grid2">${AUD.map(([v,l])=>opt('aud',v,l,{multi:true})).join('')}</div></div>
   <div class="q"><h2>O que a pessoa deve sentir ao entrar? <small style="color:var(--mut);font-weight:400">até 3</small></h2><div class="grid2">${FEEL.map(([v,l])=>opt('feel',v,l,{multi:true})).join('')}</div></div>`,
  ()=>{const sc=scores(),ps=paletteScores();if(!S.sty)S.sty=sc[0].k;const {p,t,checks}=tokens();
@@ -690,14 +759,15 @@ function summary(){const b=brief();return `✦ ${b.negocio.nome||'Novo projeto'}
 
 // ================= engine =================
 function canNext(){return [true,!!S.nome.trim()&&!!S.seg&&(S.seg!=='outro'||!!S.segOutro.trim()),S.obj.length>0||!!S.objOutro.trim(),true,!!S.price,true,true,true,true][S.step];}
-function render(){const n=STEPS.length;document.getElementById('steps').innerHTML=Array.from({length:n},(_,i)=>`<b class="${i<=S.step?'on':''}"></b>`).join('');
+// keep=true: re-render inside the same step (palette, layout, feeling) keeps scroll and focus; only step changes go to the top.
+function render(keep){const n=STEPS.length;const panel=document.querySelector('.panel'),py=panel?.scrollTop||0,wy=window.scrollY,fk=keep&&document.activeElement?.closest?.('[data-pal],[data-sty],[data-key],[data-motion]');const fsel=fk?['pal','sty','motion'].map(a=>fk.dataset[a]!==undefined?`[data-${a}="${fk.dataset[a]}"]`:'').find(Boolean)||(fk.dataset.key?`.opt[data-key="${fk.dataset.key}"][data-val="${fk.dataset.val}"]`:''):'';document.getElementById('steps').innerHTML=Array.from({length:n},(_,i)=>`<b class="${i<=S.step?'on':''}"></b>`).join('');
  document.getElementById('step').innerHTML=STEPS[S.step]();document.getElementById('back').style.visibility=S.step?'visible':'hidden';
  const nx=document.getElementById('next');nx.style.display=S.step===n-1?'none':'';nx.textContent=S.step===0?'Começar':S.step===n-2?'Ver meu projeto':'Continuar';nx.disabled=!canNext();nx.style.opacity=canNext()?1:.4;
  document.getElementById('meter').textContent=S.step&&S.step<n-1?`${S.step} de ${n-2}`:'';
  document.documentElement.style.setProperty('--mot',S.motion);document.body.classList.toggle('still',S.motion===0);
  const go=()=>{site();wire();save();};if(document.startViewTransition&&S.motion>0&&render.vt)document.startViewTransition(go);else go();render.vt=false;
- document.querySelector('.panel').scrollTo?.({top:0});window.scrollTo({top:0});}
-function refresh(){document.getElementById('next').disabled=!canNext();document.getElementById('next').style.opacity=canNext()?1:.4;site();const pb=document.getElementById('priceBlock');if(pb)pb.innerHTML=priceView();save();}
+ if(keep){if(panel)panel.scrollTop=py;window.scrollTo({top:wy});if(fsel)document.querySelector(fsel)?.focus({preventScroll:true});}else{panel?.scrollTo?.({top:0});window.scrollTo({top:0});}}
+function refresh(){const tn=document.getElementById('tierNote');if(tn)tn.textContent=S.price?TIER[S.price].note:'A faixa muda a estratégia do site, não só as cores.';document.getElementById('next').disabled=!canNext();document.getElementById('next').style.opacity=canNext()?1:.4;site();const pb=document.getElementById('priceBlock');if(pb)pb.innerHTML=priceView();save();}
 function wire(){
  document.querySelectorAll('.opt[data-key]').forEach(b=>b.onclick=()=>{const k=b.dataset.key,v=b.dataset.val,multi=b.dataset.multi==='1';
   const top=k in S&&k!=='ans';let cur=top?S[k]:S.ans[k];
@@ -705,18 +775,18 @@ function wire(){
   if(top)S[k]=cur;else S.ans[k]=cur;
   if(k==='seg'){S.obj=[];S.ans={};S.sty='';S.pal='';S.solidario=false;openImage=null;openQuery='';}if(k==='feel'||k==='price'){S.sty='';S.pal='';}
   const rerender=(k==='seg')||(k==='feel'&&S.step===5);
-  if(rerender){render();return;}
+  if(rerender){render(true);return;}
   document.querySelectorAll(`.opt[data-key="${k}"]`).forEach(x=>x.setAttribute('aria-pressed',String(multi?(top?S[k]:S.ans[k]||[]).includes(x.dataset.val):(top?S[k]:S.ans[k])===x.dataset.val)));refresh();});
  const nome=document.getElementById('nome');if(nome)nome.oninput=()=>{S.nome=nome.value;refresh();};
  const so=document.getElementById('segOutro');if(so)so.oninput=()=>{S.segOutro=so.value;refresh();scheduleOpenverse();};
  const oo=document.getElementById('objOutro');if(oo)oo.oninput=()=>{S.objOutro=oo.value;refresh();scheduleOpenverse();};
  document.querySelectorAll('[data-text]').forEach(i=>i.oninput=()=>{S.ans[i.dataset.text]=i.value;refresh();});
  document.querySelectorAll('[data-free]').forEach(i=>i.oninput=()=>{S[i.dataset.free]=i.value;save();});
- document.querySelectorAll('[data-sty]').forEach(b=>b.onclick=()=>{S.sty=b.dataset.sty;render.vt=true;render();document.getElementById('vp').scrollTo({top:0,behavior:'smooth'});});
- document.querySelectorAll('[data-pal]').forEach(b=>b.onclick=()=>{S.pal=b.dataset.pal;render.vt=true;render();document.getElementById('vp').scrollTo({top:0,behavior:'smooth'});});
+ document.querySelectorAll('[data-sty]').forEach(b=>b.onclick=()=>{S.sty=b.dataset.sty;render.vt=true;render(true);document.getElementById('vp').scrollTo({top:0,behavior:'smooth'});});
+ document.querySelectorAll('[data-pal]').forEach(b=>b.onclick=()=>{S.pal=b.dataset.pal;render.vt=true;render(true);document.getElementById('vp').scrollTo({top:0,behavior:'smooth'});});
  const solid=document.querySelector('[data-solidario]');if(solid)solid.onclick=()=>{S.solidario=!S.solidario;solid.setAttribute('aria-pressed',String(S.solidario));refresh();};
  document.querySelectorAll('[data-r]').forEach(r=>r.oninput=()=>{S[r.dataset.r]=Number(r.value);document.getElementById('o-'+r.dataset.r).textContent=Math.round(r.value*100)+'%';refresh();});
- document.querySelectorAll('button[data-motion]').forEach(b=>b.onclick=()=>{S.motion=Number(b.dataset.motion);render();});
+ document.querySelectorAll('button[data-motion]').forEach(b=>b.onclick=()=>{S.motion=Number(b.dataset.motion);render(true);});
  const c=document.getElementById('copy');if(c)c.onclick=async()=>{try{await navigator.clipboard.writeText(summary());c.textContent='Copiado ✓';}catch{c.textContent='Não consegui copiar — use Baixar';}};
  const d=document.getElementById('dl');if(d)d.onclick=()=>{const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([JSON.stringify(brief(),null,2)],{type:'application/json'}));a.download=`briefing-${slug(S.nome)||'projeto'}.json`;a.click();};
  const p=document.getElementById('pdf');if(p)p.onclick=()=>window.print();

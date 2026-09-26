@@ -1,0 +1,525 @@
+{
+ "generator": "ComfyUI 0.37.0 + FLUX.2 [klein] 4B base fp8 (Apache-2.0, sha256 44bab3a8…6840), qwen_3_4b, flux2-vae; euler, Flux2Scheduler",
+ "artDirection": "scratchpad direcao.mjs v4 (26/09/2026): neutral low-chroma set, key follows palette base luminance, subject right 2/3, no faces/hands/text/logos",
+ "review": "every file inspected at full size by Claude (Human Lens first pass); rejected: brand-like grilles, invented patient/receptionists, laptop logo, gibberish luggage text, extra dog leg, hidden açaí, stacked shoes",
+ "images": [
+  {
+   "file": "hero-acai-escuro.webp",
+   "webpSha256": "e6655bfc05e15e173a6171d2a4085e5a9ab10a324f3cdf9f73437050f3427fb7",
+   "pngSha256": "947dd16839629ae3f0a6f89ef6d6055e9de14281eedf90ee1e425ad6d4711abd",
+   "seed": 7201,
+   "model": "flux-2-klein-base-4b-fp8.safetensors",
+   "steps": 28,
+   "cfg": 4,
+   "size": [
+    1344,
+    1008
+   ],
+   "prompt": "a handmade stoneware bowl of thick purple açaí topped with sliced banana, granola and fresh blueberries, a wooden spoon beside it on a folded linen napkin. Low-key editorial photograph in daylight: deep charcoal plaster walls #1F1D1B and dark neutral surfaces, a single soft shaft of daylight from a tall window on the left sculpting the subject, the rest falling into rich, clean shadow. Warm-neutral natural color. Composition: subject in the right two-thirds of the frame, calm uncluttered space on the left third. Eye-level view, shot on a Hasselblad X2D with a 45mm lens at f/5.6, true-to-life proportions, crisp natural textures, sharp focus on the subject, refined and quiet mood."
+  },
+  {
+   "file": "hero-alimentacao.webp",
+   "webpSha256": "02316d4d33121d0534a3dcaa5b60d2da937494d996494aeb01dfda2c09b1efa7",
+   "pngSha256": "0a5f4370793d6dc4576e365d026c755fea9a6cdc483cb571554c026ce26b5b2a",
+   "seed": 7201,
+   "model": "flux-2-klein-base-4b-fp8.safetensors",
+   "steps": 28,
+   "cfg": 4,
+   "size": [
+    1344,
+    1008
+   ],
+   "prompt": "a plate of fresh handmade tagliatelle with basil and shaved parmesan on a solid oak bistro table, a glass of water and a folded linen napkin beside it. Bright high-key editorial photograph in soft morning daylight from a large window on the left, gentle natural shadows. Warm white walls #ECE8E1 and pale neutral surfaces keep the scene calm and low in color so the subject's natural materials stand out. Composition: subject in the right two-thirds of the frame, calm uncluttered space on the left third. Eye-level view, shot on a Hasselblad X2D with a 45mm lens at f/5.6, true-to-life proportions, crisp natural textures, sharp focus on the subject, refined and quiet mood."
+  },
+  {
+   "file": "hero-alimentacao-escuro.webp",
+   "webpSha256": "d8f5286f0b24bfe45bfc475a75a424b53e859beb4217d9d2c0ec104d9804aac4",
+   "pngSha256": "86f16ef70a4460b0b3a08ba4b2e1a3efad95335e8f2afcb9e886c11d85d6a6e9",
+   "seed": 7201,
+   "model": "flux-2-klein-base-4b-fp8.safetensors",
+   "steps": 28,
+   "cfg": 4,
+   "size": [
+    1344,
+    1008
+   ],
+   "prompt": "a plate of fresh handmade tagliatelle with basil and shaved parmesan on a solid oak bistro table, a glass of water and a folded linen napkin beside it. Low-key editorial photograph in daylight: deep charcoal plaster walls #1F1D1B and dark neutral surfaces, a single soft shaft of daylight from a tall window on the left sculpting the subject, the rest falling into rich, clean shadow. Warm-neutral natural color. Composition: subject in the right two-thirds of the frame, calm uncluttered space on the left third. Eye-level view, shot on a Hasselblad X2D with a 45mm lens at f/5.6, true-to-life proportions, crisp natural textures, sharp focus on the subject, refined and quiet mood."
+  },
+  {
+   "file": "hero-automotivo.webp",
+   "webpSha256": "942d642451e0f8d37a76f1dc1a23d6cfd4ec96da3403fbabbb6bce551365de30",
+   "pngSha256": "b4b1a673e9824c5c517f5a97430a5d3b8b67566147619f4a2029cdd33d92fadd",
+   "seed": 7203,
+   "model": "flux-2-klein-base-4b-fp8.safetensors",
+   "steps": 28,
+   "cfg": 4,
+   "size": [
+    1344,
+    1008
+   ],
+   "prompt": "a close-up of the curved front fender and hood of a car freshly polished to a mirror finish in deep graphite paint, crisp reflection lines and a few water beads on the glossy surface, a folded grey microfiber cloth resting on the hood. Bright high-key editorial photograph in soft morning daylight from a large window on the left, gentle natural shadows. Warm white walls #ECE8E1 and pale neutral surfaces keep the scene calm and low in color so the subject's natural materials stand out. Composition: subject in the right two-thirds of the frame, calm uncluttered space on the left third. Eye-level view, shot on a Hasselblad X2D with a 45mm lens at f/5.6, true-to-life proportions, crisp natural textures, sharp focus on the subject, refined and quiet mood."
+  },
+  {
+   "file": "hero-automotivo-escuro.webp",
+   "webpSha256": "a9b11773f2963101feb6e1982764fda6a5a7bdd0849b8a7ff76d3c34139176da",
+   "pngSha256": "ed02d4b1e22b08e3ad028cbe518a8dff18d0b7c3dd68ebff9ff3165af0ebddb1",
+   "seed": 7202,
+   "model": "flux-2-klein-base-4b-fp8.safetensors",
+   "steps": 28,
+   "cfg": 4,
+   "size": [
+    1344,
+    1008
+   ],
+   "prompt": "a close-up of the curved front fender and hood of a car freshly polished to a mirror finish in deep graphite paint, crisp reflection lines and a few water beads on the glossy surface, a folded grey microfiber cloth resting on the hood. Low-key editorial photograph in daylight: deep charcoal plaster walls #1F1D1B and dark neutral surfaces, a single soft shaft of daylight from a tall window on the left sculpting the subject, the rest falling into rich, clean shadow. Warm-neutral natural color. Composition: subject in the right two-thirds of the frame, calm uncluttered space on the left third. Eye-level view, shot on a Hasselblad X2D with a 45mm lens at f/5.6, true-to-life proportions, crisp natural textures, sharp focus on the subject, refined and quiet mood."
+  },
+  {
+   "file": "hero-calcados.webp",
+   "webpSha256": "6b6a7170f54cbe30cdb8e45211b3bb6446971d34674dbfbd9856f2d3682c9472",
+   "pngSha256": "4273e7242705561195d85a059355eaf1dbc08d8bf7bbee203b60c79c57bdb90c",
+   "seed": 7203,
+   "model": "flux-2-klein-base-4b-fp8.safetensors",
+   "steps": 28,
+   "cfg": 4,
+   "size": [
+    1344,
+    1008
+   ],
+   "prompt": "four single leather shoes standing side by side with clear space between them on a floating solid oak shelf, all pointing the same way: a tan loafer, a white leather sneaker, a dark brown oxford and a black derby. Bright high-key editorial photograph in soft morning daylight from a large window on the left, gentle natural shadows. Warm white walls #ECE8E1 and pale neutral surfaces keep the scene calm and low in color so the subject's natural materials stand out. Composition: subject in the right two-thirds of the frame, calm uncluttered space on the left third. Eye-level view, shot on a Hasselblad X2D with a 45mm lens at f/5.6, true-to-life proportions, crisp natural textures, sharp focus on the subject, refined and quiet mood."
+  },
+  {
+   "file": "hero-calcados-escuro.webp",
+   "webpSha256": "c6188c226101b5d05f26a1301d9d80179f2d0d69a57bb785e560eb5c1d2f7c69",
+   "pngSha256": "274e524a95f032f636c823b580507d3546e7fd97fe8d1701a246660700482eb1",
+   "seed": 7201,
+   "model": "flux-2-klein-base-4b-fp8.safetensors",
+   "steps": 28,
+   "cfg": 4,
+   "size": [
+    1344,
+    1008
+   ],
+   "prompt": "a curated row of leather shoes on a floating solid oak shelf: tan loafers, white leather sneakers and dark brown oxfords, evenly spaced. Low-key editorial photograph in daylight: deep charcoal plaster walls #1F1D1B and dark neutral surfaces, a single soft shaft of daylight from a tall window on the left sculpting the subject, the rest falling into rich, clean shadow. Warm-neutral natural color. Composition: subject in the right two-thirds of the frame, calm uncluttered space on the left third. Eye-level view, shot on a Hasselblad X2D with a 45mm lens at f/5.6, true-to-life proportions, crisp natural textures, sharp focus on the subject, refined and quiet mood."
+  },
+  {
+   "file": "hero-construcao.webp",
+   "webpSha256": "422f4e83a6b8f4de445d01104ea11e537d446633cd81ba92760a1467f9fda1a8",
+   "pngSha256": "9f1c6c47ced585feb0de706a2d7037830a63d4dcc1f6d3744464a2bf7628bf74",
+   "seed": 7201,
+   "model": "flux-2-klein-base-4b-fp8.safetensors",
+   "steps": 28,
+   "cfg": 4,
+   "size": [
+    1344,
+    1008
+   ],
+   "prompt": "architectural material samples arranged on a concrete plinth: a travertine slab, a brushed steel plate, an oak board and a small concrete block. Bright high-key editorial photograph in soft morning daylight from a large window on the left, gentle natural shadows. Warm white walls #ECE8E1 and pale neutral surfaces keep the scene calm and low in color so the subject's natural materials stand out. Composition: subject in the right two-thirds of the frame, calm uncluttered space on the left third. Eye-level view, shot on a Hasselblad X2D with a 45mm lens at f/5.6, true-to-life proportions, crisp natural textures, sharp focus on the subject, refined and quiet mood."
+  },
+  {
+   "file": "hero-construcao-escuro.webp",
+   "webpSha256": "2cbc07a2da644668b36e1c1e7e9db99d5ef675bd04d5fc251a3533b972f9f12d",
+   "pngSha256": "80214e143f55a7325f61690eb0b8ed8be0caf46b5bbb989d154f70d8459584d1",
+   "seed": 7201,
+   "model": "flux-2-klein-base-4b-fp8.safetensors",
+   "steps": 28,
+   "cfg": 4,
+   "size": [
+    1344,
+    1008
+   ],
+   "prompt": "architectural material samples arranged on a concrete plinth: a travertine slab, a brushed steel plate, an oak board and a small concrete block. Low-key editorial photograph in daylight: deep charcoal plaster walls #1F1D1B and dark neutral surfaces, a single soft shaft of daylight from a tall window on the left sculpting the subject, the rest falling into rich, clean shadow. Warm-neutral natural color. Composition: subject in the right two-thirds of the frame, calm uncluttered space on the left third. Eye-level view, shot on a Hasselblad X2D with a 45mm lens at f/5.6, true-to-life proportions, crisp natural textures, sharp focus on the subject, refined and quiet mood."
+  },
+  {
+   "file": "hero-decoracao.webp",
+   "webpSha256": "f70735d412ba573bc6c16d9ac171e9fb5495b11969091609faa0c23dca42a59b",
+   "pngSha256": "055ccfac01e495a2a9c4b2e81d0dfb075c09d73ff1d0f76f3981fa27043df17c",
+   "seed": 7201,
+   "model": "flux-2-klein-base-4b-fp8.safetensors",
+   "steps": 28,
+   "cfg": 4,
+   "size": [
+    1344,
+    1008
+   ],
+   "prompt": "a boucle armchair in warm ivory beside a solid walnut side table with a handmade stoneware vase holding one olive branch. Bright high-key editorial photograph in soft morning daylight from a large window on the left, gentle natural shadows. Warm white walls #ECE8E1 and pale neutral surfaces keep the scene calm and low in color so the subject's natural materials stand out. Composition: subject in the right two-thirds of the frame, calm uncluttered space on the left third. Eye-level view, shot on a Hasselblad X2D with a 45mm lens at f/5.6, true-to-life proportions, crisp natural textures, sharp focus on the subject, refined and quiet mood."
+  },
+  {
+   "file": "hero-decoracao-escuro.webp",
+   "webpSha256": "b43917107c08064fa139659b30c610e2eefe076ee20470eaefba038c1328ad5c",
+   "pngSha256": "2294f0b6757aec5adf11ceb479bc5164cc69ba0061a240f9ddb0f6eef47b8ca8",
+   "seed": 7201,
+   "model": "flux-2-klein-base-4b-fp8.safetensors",
+   "steps": 28,
+   "cfg": 4,
+   "size": [
+    1344,
+    1008
+   ],
+   "prompt": "a boucle armchair in warm ivory beside a solid walnut side table with a handmade stoneware vase holding one olive branch. Low-key editorial photograph in daylight: deep charcoal plaster walls #1F1D1B and dark neutral surfaces, a single soft shaft of daylight from a tall window on the left sculpting the subject, the rest falling into rich, clean shadow. Warm-neutral natural color. Composition: subject in the right two-thirds of the frame, calm uncluttered space on the left third. Eye-level view, shot on a Hasselblad X2D with a 45mm lens at f/5.6, true-to-life proportions, crisp natural textures, sharp focus on the subject, refined and quiet mood."
+  },
+  {
+   "file": "hero-educacao.webp",
+   "webpSha256": "bbff5a939b890e12b1312e30ad61a7f4d358f5c1d1e2667a63a4c3f8db5d8bf1",
+   "pngSha256": "68b0471b342ed61cbbfad58a77c992f02f2405e579ce247654243c3c3e548298",
+   "seed": 7201,
+   "model": "flux-2-klein-base-4b-fp8.safetensors",
+   "steps": 28,
+   "cfg": 4,
+   "size": [
+    1344,
+    1008
+   ],
+   "prompt": "a solid oak study desk with a neat stack of hardcover books with plain linen covers, two closed notebooks, pencils in a ceramic cup and a small plant. Bright high-key editorial photograph in soft morning daylight from a large window on the left, gentle natural shadows. Warm white walls #ECE8E1 and pale neutral surfaces keep the scene calm and low in color so the subject's natural materials stand out. Composition: subject in the right two-thirds of the frame, calm uncluttered space on the left third. Eye-level view, shot on a Hasselblad X2D with a 45mm lens at f/5.6, true-to-life proportions, crisp natural textures, sharp focus on the subject, refined and quiet mood."
+  },
+  {
+   "file": "hero-educacao-escuro.webp",
+   "webpSha256": "8245473fa7f0e59e55c2ddbc057f57c3e4bf8d8f0eb0a52332074028568d2193",
+   "pngSha256": "662ca789c752396f0cb008a15b3b05cf95c2537c5798e81f96d8b54baeae6f74",
+   "seed": 7201,
+   "model": "flux-2-klein-base-4b-fp8.safetensors",
+   "steps": 28,
+   "cfg": 4,
+   "size": [
+    1344,
+    1008
+   ],
+   "prompt": "a solid oak study desk with a neat stack of hardcover books with plain linen covers, two closed notebooks, pencils in a ceramic cup and a small plant. Low-key editorial photograph in daylight: deep charcoal plaster walls #1F1D1B and dark neutral surfaces, a single soft shaft of daylight from a tall window on the left sculpting the subject, the rest falling into rich, clean shadow. Warm-neutral natural color. Composition: subject in the right two-thirds of the frame, calm uncluttered space on the left third. Eye-level view, shot on a Hasselblad X2D with a 45mm lens at f/5.6, true-to-life proportions, crisp natural textures, sharp focus on the subject, refined and quiet mood."
+  },
+  {
+   "file": "hero-eventos.webp",
+   "webpSha256": "0a884a6bf4106e107f4a6d06ea45270bca54199fcf2af51685b896d5614c8c3c",
+   "pngSha256": "8ae2dda57a95f3d0b40d8dc964b3863baf7204efb7828ecea95644cbf7b5b699",
+   "seed": 7201,
+   "model": "flux-2-klein-base-4b-fp8.safetensors",
+   "steps": 28,
+   "cfg": 4,
+   "size": [
+    1344,
+    1008
+   ],
+   "prompt": "an elegant round banquet table with white linen, crystal glasses, a low arrangement of white roses and eucalyptus and slim ivory candles. Bright high-key editorial photograph in soft morning daylight from a large window on the left, gentle natural shadows. Warm white walls #ECE8E1 and pale neutral surfaces keep the scene calm and low in color so the subject's natural materials stand out. Composition: subject in the right two-thirds of the frame, calm uncluttered space on the left third. Eye-level view, shot on a Hasselblad X2D with a 45mm lens at f/5.6, true-to-life proportions, crisp natural textures, sharp focus on the subject, refined and quiet mood."
+  },
+  {
+   "file": "hero-eventos-escuro.webp",
+   "webpSha256": "2b3375c24404bb09cab6858596ce8f97a4ec0783eec71913f155b349fceae7da",
+   "pngSha256": "7fe9dd6112da135b97590a068641cb04c17ae27b42de2bdc115abe2c521f2f0e",
+   "seed": 7201,
+   "model": "flux-2-klein-base-4b-fp8.safetensors",
+   "steps": 28,
+   "cfg": 4,
+   "size": [
+    1344,
+    1008
+   ],
+   "prompt": "an elegant round banquet table with white linen, crystal glasses, a low arrangement of white roses and eucalyptus and slim ivory candles. Low-key editorial photograph in daylight: deep charcoal plaster walls #1F1D1B and dark neutral surfaces, a single soft shaft of daylight from a tall window on the left sculpting the subject, the rest falling into rich, clean shadow. Warm-neutral natural color. Composition: subject in the right two-thirds of the frame, calm uncluttered space on the left third. Eye-level view, shot on a Hasselblad X2D with a 45mm lens at f/5.6, true-to-life proportions, crisp natural textures, sharp focus on the subject, refined and quiet mood."
+  },
+  {
+   "file": "hero-fitness.webp",
+   "webpSha256": "ddc5f23473463f5d324da2a22fb21b43980edf9e514f9af7755d4509d048b83d",
+   "pngSha256": "2a27abd22f84a6b75cb1bd174d7f9bad38fcd3fe370d4bf8004c13e560e27e70",
+   "seed": 7201,
+   "model": "flux-2-klein-base-4b-fp8.safetensors",
+   "steps": 28,
+   "cfg": 4,
+   "size": [
+    1344,
+    1008
+   ],
+   "prompt": "a pair of matte black hexagonal dumbbells, a cast iron kettlebell and a rolled natural cork yoga mat on a light wood floor in a spacious studio. Bright high-key editorial photograph in soft morning daylight from a large window on the left, gentle natural shadows. Warm white walls #ECE8E1 and pale neutral surfaces keep the scene calm and low in color so the subject's natural materials stand out. Composition: subject in the right two-thirds of the frame, calm uncluttered space on the left third. Eye-level view, shot on a Hasselblad X2D with a 45mm lens at f/5.6, true-to-life proportions, crisp natural textures, sharp focus on the subject, refined and quiet mood."
+  },
+  {
+   "file": "hero-fitness-escuro.webp",
+   "webpSha256": "50c8b85a2ebf58af10d03933d737d6e426735dde44cc77f5953d4d96dcdd3f53",
+   "pngSha256": "70e857bd5d7b77634dd9912ca032e52ab20672771ceda556e220f4e9b24debda",
+   "seed": 7201,
+   "model": "flux-2-klein-base-4b-fp8.safetensors",
+   "steps": 28,
+   "cfg": 4,
+   "size": [
+    1344,
+    1008
+   ],
+   "prompt": "a pair of matte black hexagonal dumbbells, a cast iron kettlebell and a rolled natural cork yoga mat on a light wood floor in a spacious studio. Low-key editorial photograph in daylight: deep charcoal plaster walls #1F1D1B and dark neutral surfaces, a single soft shaft of daylight from a tall window on the left sculpting the subject, the rest falling into rich, clean shadow. Warm-neutral natural color. Composition: subject in the right two-thirds of the frame, calm uncluttered space on the left third. Eye-level view, shot on a Hasselblad X2D with a 45mm lens at f/5.6, true-to-life proportions, crisp natural textures, sharp focus on the subject, refined and quiet mood."
+  },
+  {
+   "file": "hero-imoveis.webp",
+   "webpSha256": "875c00fdcd2ff069e6ca0e60449152b3f4bc872399f130fcbf5937ea6b97520c",
+   "pngSha256": "3d9050a3107cf68d79012a2ea546bf0d33353d98678da7292577d4f09fe12111",
+   "seed": 7201,
+   "model": "flux-2-klein-base-4b-fp8.safetensors",
+   "steps": 28,
+   "cfg": 4,
+   "size": [
+    1344,
+    1008
+   ],
+   "prompt": "a spacious modern apartment living room with floor-to-ceiling windows, a low linen sofa, an oak coffee table and a large potted olive tree. Bright high-key editorial photograph in soft morning daylight from a large window on the left, gentle natural shadows. Warm white walls #ECE8E1 and pale neutral surfaces keep the scene calm and low in color so the subject's natural materials stand out. Composition: subject in the right two-thirds of the frame, calm uncluttered space on the left third. Eye-level view, shot on a Hasselblad X2D with a 45mm lens at f/5.6, true-to-life proportions, crisp natural textures, sharp focus on the subject, refined and quiet mood."
+  },
+  {
+   "file": "hero-imoveis-escuro.webp",
+   "webpSha256": "3f21a6f761b882d0c2ab555aa73bf0519cdf549cc18cfeef997d3a41bea1933c",
+   "pngSha256": "1d554bd5bbd88056ff303ae6bfdd2dbd553c7857071c9642030e03373452f489",
+   "seed": 7201,
+   "model": "flux-2-klein-base-4b-fp8.safetensors",
+   "steps": 28,
+   "cfg": 4,
+   "size": [
+    1344,
+    1008
+   ],
+   "prompt": "a spacious modern apartment living room with floor-to-ceiling windows, a low linen sofa, an oak coffee table and a large potted olive tree. Low-key editorial photograph in daylight: deep charcoal plaster walls #1F1D1B and dark neutral surfaces, a single soft shaft of daylight from a tall window on the left sculpting the subject, the rest falling into rich, clean shadow. Warm-neutral natural color. Composition: subject in the right two-thirds of the frame, calm uncluttered space on the left third. Eye-level view, shot on a Hasselblad X2D with a 45mm lens at f/5.6, true-to-life proportions, crisp natural textures, sharp focus on the subject, refined and quiet mood."
+  },
+  {
+   "file": "hero-moda.webp",
+   "webpSha256": "dcc4721893deefc90fec8dcf7aaa71ef0cc49d2f4a17167697c73e3c6674c6de",
+   "pngSha256": "1c6e83d3ae7ad72ace5da15691aa0da1f419a32f5b79f2bc6016c7bfe102b15e",
+   "seed": 7201,
+   "model": "flux-2-klein-base-4b-fp8.safetensors",
+   "steps": 28,
+   "cfg": 4,
+   "size": [
+    1344,
+    1008
+   ],
+   "prompt": "a minimalist clothing rail with neatly hung linen shirts and tailored jackets in sand, stone and charcoal tones, one folded knit on a bench below. Bright high-key editorial photograph in soft morning daylight from a large window on the left, gentle natural shadows. Warm white walls #ECE8E1 and pale neutral surfaces keep the scene calm and low in color so the subject's natural materials stand out. Composition: subject in the right two-thirds of the frame, calm uncluttered space on the left third. Eye-level view, shot on a Hasselblad X2D with a 45mm lens at f/5.6, true-to-life proportions, crisp natural textures, sharp focus on the subject, refined and quiet mood."
+  },
+  {
+   "file": "hero-moda-escuro.webp",
+   "webpSha256": "18df612f4f453a02019dfaed019243334b2feba7f2c8155629a4ab3a9b453b43",
+   "pngSha256": "e861667a21134fdbb2e7113e2884ffab4f080e86d30b59cde52bb6550995311d",
+   "seed": 7201,
+   "model": "flux-2-klein-base-4b-fp8.safetensors",
+   "steps": 28,
+   "cfg": 4,
+   "size": [
+    1344,
+    1008
+   ],
+   "prompt": "a minimalist clothing rail with neatly hung linen shirts and tailored jackets in sand, stone and charcoal tones, one folded knit on a bench below. Low-key editorial photograph in daylight: deep charcoal plaster walls #1F1D1B and dark neutral surfaces, a single soft shaft of daylight from a tall window on the left sculpting the subject, the rest falling into rich, clean shadow. Warm-neutral natural color. Composition: subject in the right two-thirds of the frame, calm uncluttered space on the left third. Eye-level view, shot on a Hasselblad X2D with a 45mm lens at f/5.6, true-to-life proportions, crisp natural textures, sharp focus on the subject, refined and quiet mood."
+  },
+  {
+   "file": "hero-ong.webp",
+   "webpSha256": "5d4bc31525351a714a317bf0821438a931088cfd5998f9e5068431bebcd89364",
+   "pngSha256": "a19d3e19d662fe30e4fdd6908aec375e681bf7170759d231ce5e662d9d62a59b",
+   "seed": 7201,
+   "model": "flux-2-klein-base-4b-fp8.safetensors",
+   "steps": 28,
+   "cfg": 4,
+   "size": [
+    1344,
+    1008
+   ],
+   "prompt": "a young oak sapling growing in dark soil in a terracotta pot beside a small galvanized watering can on a weathered wooden garden table. Bright high-key editorial photograph in soft morning daylight from a large window on the left, gentle natural shadows. Warm white walls #ECE8E1 and pale neutral surfaces keep the scene calm and low in color so the subject's natural materials stand out. Composition: subject in the right two-thirds of the frame, calm uncluttered space on the left third. Eye-level view, shot on a Hasselblad X2D with a 45mm lens at f/5.6, true-to-life proportions, crisp natural textures, sharp focus on the subject, refined and quiet mood."
+  },
+  {
+   "file": "hero-ong-escuro.webp",
+   "webpSha256": "0ea29b103c60f02fd794bf75c078568159fabe86968fb0366b680989724413e1",
+   "pngSha256": "07cf02ab4b58ff104e50d3b14de0c1f0ab48ea329358b231316d613a2b2544ac",
+   "seed": 7201,
+   "model": "flux-2-klein-base-4b-fp8.safetensors",
+   "steps": 28,
+   "cfg": 4,
+   "size": [
+    1344,
+    1008
+   ],
+   "prompt": "a young oak sapling growing in dark soil in a terracotta pot beside a small galvanized watering can on a weathered wooden garden table. Low-key editorial photograph in daylight: deep charcoal plaster walls #1F1D1B and dark neutral surfaces, a single soft shaft of daylight from a tall window on the left sculpting the subject, the rest falling into rich, clean shadow. Warm-neutral natural color. Composition: subject in the right two-thirds of the frame, calm uncluttered space on the left third. Eye-level view, shot on a Hasselblad X2D with a 45mm lens at f/5.6, true-to-life proportions, crisp natural textures, sharp focus on the subject, refined and quiet mood."
+  },
+  {
+   "file": "hero-outro.webp",
+   "webpSha256": "549f7d99fe5f33f3e7513e90ff167da9650d7082d939befa7692ffa5760d709d",
+   "pngSha256": "3637526c62ae704aa45f4f70e8a31028b71bf7eced52ec2531cd3cf8733fafc3",
+   "seed": 7201,
+   "model": "flux-2-klein-base-4b-fp8.safetensors",
+   "steps": 28,
+   "cfg": 4,
+   "size": [
+    1344,
+    1008
+   ],
+   "prompt": "a calm, tidy small-business studio desk: a solid oak table with a closed kraft notebook, a ceramic coffee cup, a brass desk lamp and a small potted plant. Bright high-key editorial photograph in soft morning daylight from a large window on the left, gentle natural shadows. Warm white walls #ECE8E1 and pale neutral surfaces keep the scene calm and low in color so the subject's natural materials stand out. Composition: subject in the right two-thirds of the frame, calm uncluttered space on the left third. Eye-level view, shot on a Hasselblad X2D with a 45mm lens at f/5.6, true-to-life proportions, crisp natural textures, sharp focus on the subject, refined and quiet mood."
+  },
+  {
+   "file": "hero-outro-escuro.webp",
+   "webpSha256": "44c83eaa15ff96bc82c2980378055d7e8d71d25a9a3884104710c2dd89be9c6d",
+   "pngSha256": "1145499074b2883a329411f275b94d6fabf22349cbabde23923d10ca3b8e207d",
+   "seed": 7201,
+   "model": "flux-2-klein-base-4b-fp8.safetensors",
+   "steps": 28,
+   "cfg": 4,
+   "size": [
+    1344,
+    1008
+   ],
+   "prompt": "a calm, tidy small-business studio desk: a solid oak table with a closed kraft notebook, a ceramic coffee cup, a brass desk lamp and a small potted plant. Low-key editorial photograph in daylight: deep charcoal plaster walls #1F1D1B and dark neutral surfaces, a single soft shaft of daylight from a tall window on the left sculpting the subject, the rest falling into rich, clean shadow. Warm-neutral natural color. Composition: subject in the right two-thirds of the frame, calm uncluttered space on the left third. Eye-level view, shot on a Hasselblad X2D with a 45mm lens at f/5.6, true-to-life proportions, crisp natural textures, sharp focus on the subject, refined and quiet mood."
+  },
+  {
+   "file": "hero-padaria.webp",
+   "webpSha256": "06a6569905d35b36889958cd55b0dce2ffbe5f564a3be054d9ecda554644b126",
+   "pngSha256": "2036d51e3c3f5fbd6eaf802bacc8b8853444ba8f6371862794aa459614edb844",
+   "seed": 7201,
+   "model": "flux-2-klein-base-4b-fp8.safetensors",
+   "steps": 28,
+   "cfg": 4,
+   "size": [
+    1344,
+    1008
+   ],
+   "prompt": "a rustic sourdough loaf with a deep golden crust and flour dusting on a wooden board, a second loaf and a linen cloth behind it. Bright high-key editorial photograph in soft morning daylight from a large window on the left, gentle natural shadows. Warm white walls #ECE8E1 and pale neutral surfaces keep the scene calm and low in color so the subject's natural materials stand out. Composition: subject in the right two-thirds of the frame, calm uncluttered space on the left third. Eye-level view, shot on a Hasselblad X2D with a 45mm lens at f/5.6, true-to-life proportions, crisp natural textures, sharp focus on the subject, refined and quiet mood."
+  },
+  {
+   "file": "hero-padaria-escuro.webp",
+   "webpSha256": "2e7515e9d28a748ea9b0472d6110c03d5af2a442b25836fb172c1cf693830d61",
+   "pngSha256": "3746a14b26e002b62d348999d0b9dc69ad9e23cb19dede56130261be925e5f79",
+   "seed": 7201,
+   "model": "flux-2-klein-base-4b-fp8.safetensors",
+   "steps": 28,
+   "cfg": 4,
+   "size": [
+    1344,
+    1008
+   ],
+   "prompt": "a rustic sourdough loaf with a deep golden crust and flour dusting on a wooden board, a second loaf and a linen cloth behind it. Low-key editorial photograph in daylight: deep charcoal plaster walls #1F1D1B and dark neutral surfaces, a single soft shaft of daylight from a tall window on the left sculpting the subject, the rest falling into rich, clean shadow. Warm-neutral natural color. Composition: subject in the right two-thirds of the frame, calm uncluttered space on the left third. Eye-level view, shot on a Hasselblad X2D with a 45mm lens at f/5.6, true-to-life proportions, crisp natural textures, sharp focus on the subject, refined and quiet mood."
+  },
+  {
+   "file": "hero-pet.webp",
+   "webpSha256": "70c8af014fcd8ba0fed8b0d2e33e14598e473e13447f002826dcab4179949cde",
+   "pngSha256": "8562bcb34be12f00e2d91c33d9776e1a00be442e838a012ebe68fa1ec3290d47",
+   "seed": 7201,
+   "model": "flux-2-klein-base-4b-fp8.safetensors",
+   "steps": 28,
+   "cfg": 4,
+   "size": [
+    1344,
+    1008
+   ],
+   "prompt": "a calm golden retriever lying relaxed on a round linen dog bed, looking gently toward the window, in a bright uncluttered living room. Bright high-key editorial photograph in soft morning daylight from a large window on the left, gentle natural shadows. Warm white walls #ECE8E1 and pale neutral surfaces keep the scene calm and low in color so the subject's natural materials stand out. Composition: subject in the right two-thirds of the frame, calm uncluttered space on the left third. Eye-level view, shot on a Hasselblad X2D with a 45mm lens at f/5.6, true-to-life proportions, crisp natural textures, sharp focus on the subject, refined and quiet mood."
+  },
+  {
+   "file": "hero-pet-escuro.webp",
+   "webpSha256": "048bf6cced25cf5c1b4ce8861d5264f40a66608a60ed97556a541640569a5041",
+   "pngSha256": "c6d04c18398782b89502ec29f379dc11084f6ccc6b769047627347c5a8eb605b",
+   "seed": 7204,
+   "model": "flux-2-klein-base-4b-fp8.safetensors",
+   "steps": 28,
+   "cfg": 4,
+   "size": [
+    1344,
+    1008
+   ],
+   "prompt": "a calm golden retriever lying curled up and relaxed inside a round linen dog bed, its front paws resting together on the rim, looking gently toward the window, in a bright uncluttered living room. Low-key editorial photograph in daylight: deep charcoal plaster walls #1F1D1B and dark neutral surfaces, a single soft shaft of daylight from a tall window on the left sculpting the subject, the rest falling into rich, clean shadow. Warm-neutral natural color. Composition: subject in the right two-thirds of the frame, calm uncluttered space on the left third. Eye-level view, shot on a Hasselblad X2D with a 45mm lens at f/5.6, true-to-life proportions, crisp natural textures, sharp focus on the subject, refined and quiet mood."
+  },
+  {
+   "file": "hero-saude.webp",
+   "webpSha256": "36827ef67dbb7753b3b48ef5c169909a54af7882a281293e6cb66a1edc1a7961",
+   "pngSha256": "cada7c40b7051660ca25428758d0b659b19bbb228cd7388ea400e313ae155659",
+   "seed": 7203,
+   "model": "flux-2-klein-base-4b-fp8.safetensors",
+   "steps": 28,
+   "cfg": 4,
+   "size": [
+    1344,
+    1008
+   ],
+   "prompt": "a serene, empty clinic waiting corner: a pale oak bench with a neatly folded white towel, a large potted fiddle-leaf fig and a small round side table with a glass carafe of water. Bright high-key editorial photograph in soft morning daylight from a large window on the left, gentle natural shadows. Warm white walls #ECE8E1 and pale neutral surfaces keep the scene calm and low in color so the subject's natural materials stand out. Composition: subject in the right two-thirds of the frame, calm uncluttered space on the left third. Eye-level view, shot on a Hasselblad X2D with a 45mm lens at f/5.6, true-to-life proportions, crisp natural textures, sharp focus on the subject, refined and quiet mood."
+  },
+  {
+   "file": "hero-saude-escuro.webp",
+   "webpSha256": "5eeda65ee7d005ff468d737454c33b0e0955810a3d5383d23ef4185241d5d81b",
+   "pngSha256": "7a537e380f9680395b99a48f1965b23ffd2aaad2d69ef5d22195ecda7dae7d91",
+   "seed": 7202,
+   "model": "flux-2-klein-base-4b-fp8.safetensors",
+   "steps": 28,
+   "cfg": 4,
+   "size": [
+    1344,
+    1008
+   ],
+   "prompt": "a serene, empty clinic waiting corner: a pale oak bench with a neatly folded white towel, a large potted fiddle-leaf fig and a small round side table with a glass carafe of water. Low-key editorial photograph in daylight: deep charcoal plaster walls #1F1D1B and dark neutral surfaces, a single soft shaft of daylight from a tall window on the left sculpting the subject, the rest falling into rich, clean shadow. Warm-neutral natural color. Composition: subject in the right two-thirds of the frame, calm uncluttered space on the left third. Eye-level view, shot on a Hasselblad X2D with a 45mm lens at f/5.6, true-to-life proportions, crisp natural textures, sharp focus on the subject, refined and quiet mood."
+  },
+  {
+   "file": "hero-servicos.webp",
+   "webpSha256": "9ce276a6b729d1067caba5c74e3f4c632933334039f909ed7dbc8c9983eaba0f",
+   "pngSha256": "5f8f74d8cc3d317b89905a58b3e8e3b1895ae566d1c92d1656293733a3c5b136",
+   "seed": 7202,
+   "model": "flux-2-klein-base-4b-fp8.safetensors",
+   "steps": 28,
+   "cfg": 4,
+   "size": [
+    1344,
+    1008
+   ],
+   "prompt": "a tidy consultant desk: a closed dark leather notebook with a fountain pen resting on it, a ceramic coffee cup on a saucer and a small potted plant on a pale oak table. Bright high-key editorial photograph in soft morning daylight from a large window on the left, gentle natural shadows. Warm white walls #ECE8E1 and pale neutral surfaces keep the scene calm and low in color so the subject's natural materials stand out. Composition: subject in the right two-thirds of the frame, calm uncluttered space on the left third. Eye-level view, shot on a Hasselblad X2D with a 45mm lens at f/5.6, true-to-life proportions, crisp natural textures, sharp focus on the subject, refined and quiet mood."
+  },
+  {
+   "file": "hero-servicos-escuro.webp",
+   "webpSha256": "2b7c6a211203daf3eac695265009bb7a7ca463fca54a1d8f3951d6130b665253",
+   "pngSha256": "801d586f0c909621fd8b613b08f646c441386178b70b93ab56b889229c880452",
+   "seed": 7202,
+   "model": "flux-2-klein-base-4b-fp8.safetensors",
+   "steps": 28,
+   "cfg": 4,
+   "size": [
+    1344,
+    1008
+   ],
+   "prompt": "a tidy consultant desk: a closed dark leather notebook with a fountain pen resting on it, a ceramic coffee cup on a saucer and a small potted plant on a pale oak table. Low-key editorial photograph in daylight: deep charcoal plaster walls #1F1D1B and dark neutral surfaces, a single soft shaft of daylight from a tall window on the left sculpting the subject, the rest falling into rich, clean shadow. Warm-neutral natural color. Composition: subject in the right two-thirds of the frame, calm uncluttered space on the left third. Eye-level view, shot on a Hasselblad X2D with a 45mm lens at f/5.6, true-to-life proportions, crisp natural textures, sharp focus on the subject, refined and quiet mood."
+  },
+  {
+   "file": "hero-sushi.webp",
+   "webpSha256": "5be1460de1012fd7813bed99f1374fded18cf6646848b8229eb37b2dc4d1ba6a",
+   "pngSha256": "08fbdc17d9f5bf43ed86ac55c5d851eb96b11a3963d6962b25e8990ae492db71",
+   "seed": 7201,
+   "model": "flux-2-klein-base-4b-fp8.safetensors",
+   "steps": 28,
+   "cfg": 4,
+   "size": [
+    1344,
+    1008
+   ],
+   "prompt": "three pieces of salmon and tuna nigiri with a shiso leaf on a matte black ceramic plate, a pair of wooden chopsticks resting on a stone rest. Bright high-key editorial photograph in soft morning daylight from a large window on the left, gentle natural shadows. Warm white walls #ECE8E1 and pale neutral surfaces keep the scene calm and low in color so the subject's natural materials stand out. Composition: subject in the right two-thirds of the frame, calm uncluttered space on the left third. Eye-level view, shot on a Hasselblad X2D with a 45mm lens at f/5.6, true-to-life proportions, crisp natural textures, sharp focus on the subject, refined and quiet mood."
+  },
+  {
+   "file": "hero-sushi-escuro.webp",
+   "webpSha256": "9958ea4ed6d7ddc2b28dc8568b679ee5ac302c09ab110b9bdd6d9222b941d49d",
+   "pngSha256": "910c37dcd8bc285178aa9fda14ee8ec4115a4d747ac11f5f6a2974046b74624a",
+   "seed": 7201,
+   "model": "flux-2-klein-base-4b-fp8.safetensors",
+   "steps": 28,
+   "cfg": 4,
+   "size": [
+    1344,
+    1008
+   ],
+   "prompt": "three pieces of salmon and tuna nigiri with a shiso leaf on a matte black ceramic plate, a pair of wooden chopsticks resting on a stone rest. Low-key editorial photograph in daylight: deep charcoal plaster walls #1F1D1B and dark neutral surfaces, a single soft shaft of daylight from a tall window on the left sculpting the subject, the rest falling into rich, clean shadow. Warm-neutral natural color. Composition: subject in the right two-thirds of the frame, calm uncluttered space on the left third. Eye-level view, shot on a Hasselblad X2D with a 45mm lens at f/5.6, true-to-life proportions, crisp natural textures, sharp focus on the subject, refined and quiet mood."
+  },
+  {
+   "file": "hero-turismo.webp",
+   "webpSha256": "e255c36ae00ae5c5766f404e97fcd47ab9da6aca4711681176915331580b8a72",
+   "pngSha256": "6e0027450ae2c77ca2463676faf758ea3a730ce598a546aefca657c1f04145ac",
+   "seed": 7201,
+   "model": "flux-2-klein-base-4b-fp8.safetensors",
+   "steps": 28,
+   "cfg": 4,
+   "size": [
+    1344,
+    1008
+   ],
+   "prompt": "a cream hard-shell suitcase standing upright beside a woven straw hat and a pair of tortoiseshell sunglasses. Bright high-key editorial photograph in soft morning daylight from a large window on the left, gentle natural shadows. Warm white walls #ECE8E1 and pale neutral surfaces keep the scene calm and low in color so the subject's natural materials stand out. Composition: subject in the right two-thirds of the frame, calm uncluttered space on the left third. Eye-level view, shot on a Hasselblad X2D with a 45mm lens at f/5.6, true-to-life proportions, crisp natural textures, sharp focus on the subject, refined and quiet mood."
+  },
+  {
+   "file": "hero-turismo-escuro.webp",
+   "webpSha256": "6a5d36083bd3b52fd53b06a819610c175d03897bb97742b1a31869817d695b4b",
+   "pngSha256": "620d345b2b1195cb1441588525fd408b38ce8a61e40a2e3518a652bca7b810b5",
+   "seed": 7203,
+   "model": "flux-2-klein-base-4b-fp8.safetensors",
+   "steps": 28,
+   "cfg": 4,
+   "size": [
+    1344,
+    1008
+   ],
+   "prompt": "a cream hard-shell suitcase with a smooth, completely plain shell standing upright beside a woven straw hat and a pair of tortoiseshell sunglasses. Low-key editorial photograph in daylight: deep charcoal plaster walls #1F1D1B and dark neutral surfaces, a single soft shaft of daylight from a tall window on the left sculpting the subject, the rest falling into rich, clean shadow. Warm-neutral natural color. Composition: subject in the right two-thirds of the frame, calm uncluttered space on the left third. Eye-level view, shot on a Hasselblad X2D with a 45mm lens at f/5.6, true-to-life proportions, crisp natural textures, sharp focus on the subject, refined and quiet mood."
+  }
+ ]
+}
