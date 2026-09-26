@@ -1,0 +1,17 @@
+{
+  "images": [
+    {
+      "file": "construcao-2.webp",
+      "subject": "Rolo em bandeja de tinta durante pintura de interiores",
+      "author": "Karl Solano",
+      "source": "https://unsplash.com/photos/paint-roller-in-white-paint-tray-eQ-8iUrb07g",
+      "download": "https://images.unsplash.com/photo-1599619585752-c3edb42a414c?fm=webp&fit=crop&w=720&h=720&q=85",
+      "license": "Unsplash License",
+      "licenseUrl": "https://unsplash.com/license",
+      "verifiedAt": "2026-09-26",
+      "size": [720, 720],
+      "sha256": "758318facaeba8abdf8d265c74ece79b927375069bd7f9845b0c33cc831d1e3e",
+      "reason": "Substitui o rolo deformado gerado por IA após feedback do fundador; fotografia publicada em 2020, com câmera SONY ILCE-7M3 informada pela fonte."
+    }
+  ]
+}

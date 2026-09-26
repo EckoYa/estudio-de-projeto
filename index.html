@@ -85,6 +85,10 @@ input[type=range]{width:100%;accent-color:var(--glow)}.ends{display:flex;justify
 .chrome{display:flex;align-items:center;gap:7px;padding:10px 14px;background:#17181d;font-size:.72rem;color:#8b8b93}.chrome i{width:9px;height:9px;border-radius:50%;background:#2c2d33}
 .chrome span{margin-left:10px;flex:1;background:#0f1013;border-radius:8px;padding:4px 12px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
 .viewport{flex:1;min-height:0;overflow:auto;scroll-behavior:smooth;background:var(--s-bg,#fff);container-type:inline-size;overscroll-behavior:contain}
+.viewport .hero-gallery,.viewport .prods{cursor:grab}
+.viewport img{-webkit-user-drag:none}
+.viewport.dragging,.viewport.dragging *{cursor:grabbing!important;user-select:none!important;-webkit-user-select:none!important}
+.viewport.dragging .hero-gallery,.viewport.dragging .prods{scroll-snap-type:none!important}
 .phone-island,.phone-home{display:none}
 .stage[data-device=phone] .chrome{position:absolute;top:0;left:0;right:0;height:39px;z-index:5;background:var(--phone-bg,#fff);color:var(--phone-text,#222);justify-content:space-between;padding:0 23px;font-weight:700;pointer-events:none}
 .stage[data-device=phone] .chrome i{display:none}.stage[data-device=phone] .chrome span{margin:0;background:transparent;padding:0;flex:none;color:inherit;font-size:0;overflow:visible}
@@ -97,6 +101,7 @@ input[type=range]{width:100%;accent-color:var(--glow)}.ends{display:flex;justify
 .device-hints{position:absolute;inset:0;pointer-events:none;z-index:8;opacity:0;transition:opacity .25s}
 .device-hints.on{opacity:1}.device-hints button{position:absolute;border:1px solid color-mix(in oklch,var(--glow) 50%,transparent);border-radius:999px;padding:7px 10px;background:#17191ded;color:#fff;font-size:11px;white-space:nowrap;box-shadow:0 8px 20px #0006;pointer-events:auto;cursor:pointer}
 .device-hints .hint-menu{top:65px;right:14px}.device-hints .hint-swipe{top:48%;left:10px}.device-hints .hint-thumb{bottom:92px;left:16px}
+.device-hints:not(.on) button{pointer-events:none}
 .toast{position:absolute;right:30px;bottom:30px;background:rgba(20,21,26,.92);border:1px solid var(--line);padding:10px 14px;border-radius:12px;font-size:.82rem;opacity:0;transform:translateY(8px);transition:.35s;pointer-events:none;z-index:5}
 .toast.on{opacity:1;transform:none}
 /* ================= CLIENT SITE (tokens + layout archetypes) ================= */
@@ -926,12 +931,33 @@ if(history.state?.eckoyaPreview){const state={...history.state};delete state.eck
 mSyncView(false);
 // the on-screen keyboard must not be covered by (or push) the step buttons
 if(window.visualViewport)visualViewport.addEventListener('resize',()=>document.body.classList.toggle('kb',phoneUI.matches&&visualViewport.height<innerHeight-120));
-const previewViewport=document.getElementById('vp');let drag=null;
-previewViewport.addEventListener('pointerdown',e=>{if(e.pointerType!=='mouse'||e.button!==0||e.target.closest('button'))return;
- const area=e.target.closest('.prods,.hero-gallery')||previewViewport;drag={area,x:e.clientX,y:e.clientY,left:area.scrollLeft,top:area.scrollTop};previewViewport.setPointerCapture(e.pointerId);
+const previewViewport=document.getElementById('vp');let drag=null,suppressPreviewClick=0;
+previewViewport.addEventListener('pointerdown',e=>{if(e.pointerType!=='mouse'||e.button!==0)return;suppressPreviewClick=0;if(e.target.closest('button,a,input,textarea,select,[contenteditable="true"]'))return;
+ e.preventDefault();
+ const strip=e.target.closest('.prods,.hero-gallery'),area=strip&&strip.scrollWidth>strip.clientWidth+1?strip:previewViewport;
+ drag={area,x:e.clientX,y:e.clientY,left:area.scrollLeft,top:previewViewport.scrollTop,axis:'',pointer:e.pointerId,behavior:previewViewport.style.scrollBehavior};
+ previewViewport.setPointerCapture(e.pointerId);
 });
-previewViewport.addEventListener('pointermove',e=>{if(!drag)return;drag.area.scrollLeft=drag.left+drag.x-e.clientX;drag.area.scrollTop=drag.top+drag.y-e.clientY;});
-previewViewport.addEventListener('pointerup',()=>drag=null);previewViewport.addEventListener('pointercancel',()=>drag=null);
+previewViewport.addEventListener('pointermove',e=>{if(!drag)return;if(!(e.buttons&1)){finishPreviewDrag();return;}
+ const dx=drag.x-e.clientX,dy=drag.y-e.clientY;
+ if(!drag.axis){if(Math.max(Math.abs(dx),Math.abs(dy))<6)return;drag.axis=drag.area!==previewViewport&&Math.abs(dx)>Math.abs(dy)?'x':'y';previewViewport.classList.add('dragging');previewViewport.style.scrollBehavior='auto';}
+ e.preventDefault();const area=drag.axis==='x'?drag.area:previewViewport,scale=area.getBoundingClientRect().width/area.clientWidth||1;
+ if(drag.axis==='x')area.scrollLeft=drag.left+dx/scale;else previewViewport.scrollTop=drag.top+dy/scale;
+});
+function finishPreviewDrag(e){if(!drag)return;const d=drag;drag=null;
+ let snap;
+ if(d.axis==='x'&&e?.type==='pointerup'){const area=d.area,max=area.scrollWidth-area.clientWidth,first=area.children[0]?.offsetLeft||0;
+  const stops=[...new Set([...area.children].map(c=>Math.max(0,Math.min(max,c.offsetLeft-first))))].sort((a,b)=>a-b),nearest=value=>stops.reduce((a,b)=>Math.abs(b-value)<Math.abs(a-value)?b:a,stops[0]||0);
+  const origin=nearest(d.left),moved=area.scrollLeft-d.left;let target=nearest(area.scrollLeft);
+  if(target===origin&&Math.abs(moved)>=Math.min(40,area.clientWidth*.15)){const i=stops.indexOf(origin);target=stops[Math.max(0,Math.min(stops.length-1,i+Math.sign(moved)))];}
+  snap={area,target};}
+ if(d.axis)suppressPreviewClick=performance.now()+250;
+ previewViewport.classList.remove('dragging');previewViewport.style.scrollBehavior=d.behavior;
+ if(snap)snap.area.scrollTo({left:snap.target,behavior:'instant'});
+ if(previewViewport.hasPointerCapture(d.pointer))previewViewport.releasePointerCapture(d.pointer);}
+previewViewport.addEventListener('pointerup',finishPreviewDrag);previewViewport.addEventListener('pointercancel',finishPreviewDrag);previewViewport.addEventListener('lostpointercapture',finishPreviewDrag);window.addEventListener('blur',finishPreviewDrag);
+previewViewport.addEventListener('dragstart',e=>e.preventDefault());
+previewViewport.addEventListener('click',e=>{if(e.isTrusted&&performance.now()<suppressPreviewClick){e.preventDefault();e.stopImmediatePropagation();}},{capture:true});
 window.__S=S;window.__render=render;window.__tokens=tokens;window.__STY=STY;window.__SEG=SEG;window.__PALS=PALS;window.__paletteScores=paletteScores;window.__paletteRanking=paletteRanking;window.__paletteTokens=paletteTokens;window.__estimateVAP=estimateVAP;window.__targetVAP=targetVAP;window.__VAP_PREMISSES=VAP_PREMISSES;window.__lin=lin;window.__CR=CR;window.__labDist=labDist;window.__estimate=estimate;window.__PRICING=PRICING;window.__brief=brief;window.__modules=modules;window.__deepQs=deepQs; // automated checks
 render();
 </script>
