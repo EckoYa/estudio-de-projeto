@@ -74,6 +74,34 @@
    "prompt": "a close-up of the curved front fender and hood of a car freshly polished to a mirror finish in deep graphite paint, crisp reflection lines and a few water beads on the glossy surface, a folded grey microfiber cloth resting on the hood. Low-key editorial photograph in daylight: deep charcoal plaster walls #1F1D1B and dark neutral surfaces, a single soft shaft of daylight from a tall window on the left sculpting the subject, the rest falling into rich, clean shadow. Warm-neutral natural color. Composition: subject in the right two-thirds of the frame, calm uncluttered space on the left third. Eye-level view, shot on a Hasselblad X2D with a 45mm lens at f/5.6, true-to-life proportions, crisp natural textures, sharp focus on the subject, refined and quiet mood."
   },
   {
+   "file": "hero-beleza.webp",
+   "webpSha256": "78c9108a734b1b5fb35ae6556642e5de5a9179335e4bccf48f58d96b1c24005f",
+   "pngSha256": "2c773d1fb6eb257240229091fb10ff3056d4095ff82a4d31b8f82c4dc58c5b8f",
+   "seed": 7202,
+   "model": "flux-2-klein-base-4b-fp8.safetensors",
+   "steps": 28,
+   "cfg": 4,
+   "size": [
+    1344,
+    1008
+   ],
+   "prompt": "a calm salon vanity station: a large round mirror on the wall, a white marble counter with makeup brushes standing in a ceramic cup, three amber glass bottles without labels and a neatly folded white towel. Bright high-key editorial photograph in soft morning daylight from a large window on the left, gentle natural shadows. Warm white walls #ECE8E1 and pale neutral surfaces keep the scene calm and low in color so the subject's natural materials stand out. Composition: subject in the right two-thirds of the frame, calm uncluttered space on the left third. Eye-level view, shot on a Hasselblad X2D with a 45mm lens at f/5.6, true-to-life proportions, crisp natural textures, sharp focus on the subject, refined and quiet mood."
+  },
+  {
+   "file": "hero-beleza-escuro.webp",
+   "webpSha256": "cc05b68dbbdc9b7282378ee18e84e6022a993597cb9f15003708108bc871eaee",
+   "pngSha256": "ae6c400a3b73cb74dc3bbc1500c4d0eaf2916692a81f35f8a2d7a369fa113f1f",
+   "seed": 7202,
+   "model": "flux-2-klein-base-4b-fp8.safetensors",
+   "steps": 28,
+   "cfg": 4,
+   "size": [
+    1344,
+    1008
+   ],
+   "prompt": "a calm salon vanity station: a large round mirror on the wall, a white marble counter with makeup brushes standing in a ceramic cup, three amber glass bottles without labels and a neatly folded white towel. Low-key editorial photograph in daylight: deep charcoal plaster walls #1F1D1B and dark neutral surfaces, a single soft shaft of daylight from a tall window on the left sculpting the subject, the rest falling into rich, clean shadow. Warm-neutral natural color. Composition: subject in the right two-thirds of the frame, calm uncluttered space on the left third. Eye-level view, shot on a Hasselblad X2D with a 45mm lens at f/5.6, true-to-life proportions, crisp natural textures, sharp focus on the subject, refined and quiet mood."
+  },
+  {
    "file": "hero-calcados.webp",
    "webpSha256": "6b6a7170f54cbe30cdb8e45211b3bb6446971d34674dbfbd9856f2d3682c9472",
    "pngSha256": "4273e7242705561195d85a059355eaf1dbc08d8bf7bbee203b60c79c57bdb90c",
@@ -270,6 +298,34 @@
    "prompt": "a spacious modern apartment living room with floor-to-ceiling windows, a low linen sofa, an oak coffee table and a large potted olive tree. Low-key editorial photograph in daylight: deep charcoal plaster walls #1F1D1B and dark neutral surfaces, a single soft shaft of daylight from a tall window on the left sculpting the subject, the rest falling into rich, clean shadow. Warm-neutral natural color. Composition: subject in the right two-thirds of the frame, calm uncluttered space on the left third. Eye-level view, shot on a Hasselblad X2D with a 45mm lens at f/5.6, true-to-life proportions, crisp natural textures, sharp focus on the subject, refined and quiet mood."
   },
   {
+   "file": "hero-industria.webp",
+   "webpSha256": "63af4dd14415794ff8023812868984513c6c634161093878e5a327951abd4725",
+   "pngSha256": "737526be0f9f6f92999741af1bb6f91a8733809652d69679a290db74ed202cdd",
+   "seed": 7203,
+   "model": "flux-2-klein-base-4b-fp8.safetensors",
+   "steps": 28,
+   "cfg": 4,
+   "size": [
+    1344,
+    1008
+   ],
+   "prompt": "a large precision-machined steel gear standing on its edge on a matte steel workbench, beside a neat coil of copper wire and two short brushed aluminum profiles, in a clean modern workshop. Bright high-key editorial photograph in soft morning daylight from a large window on the left, gentle natural shadows. Warm white walls #ECE8E1 and pale neutral surfaces keep the scene calm and low in color so the subject's natural materials stand out. Composition: subject in the right two-thirds of the frame, calm uncluttered space on the left third. Eye-level view, shot on a Hasselblad X2D with a 45mm lens at f/5.6, true-to-life proportions, crisp natural textures, sharp focus on the subject, refined and quiet mood."
+  },
+  {
+   "file": "hero-industria-escuro.webp",
+   "webpSha256": "9ed5ecce5860349ff0199c51855ca34dc8b8e188d64d784aa7408d0c3220bbe7",
+   "pngSha256": "2addd9c214dd9c55d80333b333a36f87c659819cda78591200897ff16d5adafc",
+   "seed": 7203,
+   "model": "flux-2-klein-base-4b-fp8.safetensors",
+   "steps": 28,
+   "cfg": 4,
+   "size": [
+    1344,
+    1008
+   ],
+   "prompt": "a large precision-machined steel gear standing on its edge on a matte steel workbench, beside a neat coil of copper wire and two short brushed aluminum profiles, in a clean modern workshop. Low-key editorial photograph in daylight: deep charcoal plaster walls #1F1D1B and dark neutral surfaces, a single soft shaft of daylight from a tall window on the left sculpting the subject, the rest falling into rich, clean shadow. Warm-neutral natural color. Composition: subject in the right two-thirds of the frame, calm uncluttered space on the left third. Eye-level view, shot on a Hasselblad X2D with a 45mm lens at f/5.6, true-to-life proportions, crisp natural textures, sharp focus on the subject, refined and quiet mood."
+  },
+  {
    "file": "hero-moda.webp",
    "webpSha256": "dcc4721893deefc90fec8dcf7aaa71ef0cc49d2f4a17167697c73e3c6674c6de",
    "pngSha256": "1c6e83d3ae7ad72ace5da15691aa0da1f419a32f5b79f2bc6016c7bfe102b15e",
@@ -296,6 +352,34 @@
     1008
    ],
    "prompt": "a minimalist clothing rail with neatly hung linen shirts and tailored jackets in sand, stone and charcoal tones, one folded knit on a bench below. Low-key editorial photograph in daylight: deep charcoal plaster walls #1F1D1B and dark neutral surfaces, a single soft shaft of daylight from a tall window on the left sculpting the subject, the rest falling into rich, clean shadow. Warm-neutral natural color. Composition: subject in the right two-thirds of the frame, calm uncluttered space on the left third. Eye-level view, shot on a Hasselblad X2D with a 45mm lens at f/5.6, true-to-life proportions, crisp natural textures, sharp focus on the subject, refined and quiet mood."
+  },
+  {
+   "file": "hero-odontologia.webp",
+   "webpSha256": "4dfae4fb3a71111258a3d8d625e316494c1639b509c200565e891207999fb0e3",
+   "pngSha256": "c3f2da898d2f221f0a8c432bdfc7a71ad7700e742c19e3363f68a09e31401977",
+   "seed": 7202,
+   "model": "flux-2-klein-base-4b-fp8.safetensors",
+   "steps": 28,
+   "cfg": 4,
+   "size": [
+    1344,
+    1008
+   ],
+   "prompt": "a serene dental-care still life on a white marble shelf: a clear glass of water, two bamboo toothbrushes standing in a white ceramic cup, a small round white ceramic dish and a sprig of fresh mint. Bright high-key editorial photograph in soft morning daylight from a large window on the left, gentle natural shadows. Warm white walls #ECE8E1 and pale neutral surfaces keep the scene calm and low in color so the subject's natural materials stand out. Composition: subject in the right two-thirds of the frame, calm uncluttered space on the left third. Eye-level view, shot on a Hasselblad X2D with a 45mm lens at f/5.6, true-to-life proportions, crisp natural textures, sharp focus on the subject, refined and quiet mood."
+  },
+  {
+   "file": "hero-odontologia-escuro.webp",
+   "webpSha256": "b8bfb019c5e6b25747e310a96927068af280748b23cb96e4d7e90e652e9e6d58",
+   "pngSha256": "4535b82f7e5b252c7c826697a982ae2dc3d108554a222a542ad89558d31e6ad1",
+   "seed": 7202,
+   "model": "flux-2-klein-base-4b-fp8.safetensors",
+   "steps": 28,
+   "cfg": 4,
+   "size": [
+    1344,
+    1008
+   ],
+   "prompt": "a serene dental-care still life on a white marble shelf: a clear glass of water, two bamboo toothbrushes standing in a white ceramic cup, a small round white ceramic dish and a sprig of fresh mint. Low-key editorial photograph in daylight: deep charcoal plaster walls #1F1D1B and dark neutral surfaces, a single soft shaft of daylight from a tall window on the left sculpting the subject, the rest falling into rich, clean shadow. Warm-neutral natural color. Composition: subject in the right two-thirds of the frame, calm uncluttered space on the left third. Eye-level view, shot on a Hasselblad X2D with a 45mm lens at f/5.6, true-to-life proportions, crisp natural textures, sharp focus on the subject, refined and quiet mood."
   },
   {
    "file": "hero-ong.webp",

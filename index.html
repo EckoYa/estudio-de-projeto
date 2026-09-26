@@ -606,7 +606,7 @@ function tokens(k){const v=STY[k||S.sty||scores()[0].k],p=PALS[paletteId()],role
 // ================= client site renderer =================
 const IMG=id=>`img/${id}.webp`;
 // Art direction v4 (26/09): each hero exists in a high-key and a low-key daylight version; the key follows the palette's base luminance (surround).
-const DARK_HEROES=new Set(['hero-acai', 'hero-alimentacao', 'hero-automotivo', 'hero-calcados', 'hero-construcao', 'hero-decoracao', 'hero-educacao', 'hero-eventos', 'hero-fitness', 'hero-imoveis', 'hero-moda', 'hero-ong', 'hero-outro', 'hero-padaria', 'hero-pet', 'hero-saude', 'hero-servicos', 'hero-sushi', 'hero-turismo']);
+const DARK_HEROES=new Set(['hero-acai', 'hero-beleza', 'hero-industria', 'hero-odontologia', 'hero-alimentacao', 'hero-automotivo', 'hero-calcados', 'hero-construcao', 'hero-decoracao', 'hero-educacao', 'hero-eventos', 'hero-fitness', 'hero-imoveis', 'hero-moda', 'hero-ong', 'hero-outro', 'hero-padaria', 'hero-pet', 'hero-saude', 'hero-servicos', 'hero-sushi', 'hero-turismo']);
 let openImage=null,openQuery='',openTimer=0;const openCache=new Map();
 async function searchOpenverse(){
  const query=(S.seg==='outro'?S.segOutro:S.objOutro).trim().slice(0,70);
